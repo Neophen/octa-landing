@@ -8,7 +8,7 @@
         class="flex flex-col items-center p-16 text-center bg-white shadow-2xl rounded-modal"
         :class="enterLeaveClass"
       >
-        <IcoEmailSent class="max-w-sm mt-4" />
+        <icon icon="email-sent" class="max-w-sm mt-4" />
         <h2 class="mt-20 text-5xl leading-tight font-display text-h2-fluid">
           Message delivered to a human
         </h2>
@@ -28,13 +28,13 @@
 <script>
 import { computed, watch, ref } from "vue";
 
-import IcoEmailSent from "../icons/IcoEmailSent.vue";
+import Icon from "./Icon.vue";
 import Btn from "./Btn.vue";
 
 export default {
   name: "MailSent",
   components: {
-    IcoEmailSent,
+    Icon,
     Btn,
   },
   props: {

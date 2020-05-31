@@ -1,6 +1,6 @@
 <template>
   <div class="grid gap-24 mx-auto mt-40 auto-grid">
-    <ico-hands class="auto-right" />
+    <icon icon="the-gist" class="auto-right" />
     <div class="auto-left">
       <h2 class="text-5xl leading-tight font-display text-h2-fluid">
         The only tool you need to run a film festival
@@ -17,13 +17,13 @@
 </template>
 
 <script>
-import IcoHands from "../icons/IcoHands.vue";
+import Icon from "./Icon.vue";
 import Btn from "./Btn.vue";
 
 export default {
   name: "TheGist",
   components: {
-    IcoHands,
+    Icon,
     Btn,
   },
 };

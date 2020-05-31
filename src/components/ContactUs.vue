@@ -3,7 +3,7 @@
     id="book-a-demo"
     class="grid grid-cols-1 gap-24 pt-40 mx-auto md:grid-cols-2"
   >
-    <IcoDemo class="md:-mx-12" />
+    <icon icon="contact-us" class="md:-mx-12" />
     <div>
       <h2 class="text-5xl font-bold leading-tight font-display text-h2-fluid">
         Book a demo
@@ -58,18 +58,18 @@
 </template>
 
 <script>
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 import { reactive, toRefs, ref, watch, computed } from "vue";
 
 import MailSent from "./MailSent.vue";
-import IcoDemo from "../icons/IcoDemo.vue";
+import Icon from "./Icon.vue";
 import Btn from "./Btn.vue";
 
 export default {
   name: "ContactUs",
   components: {
     MailSent,
-    IcoDemo,
+    Icon,
     Btn,
   },
   setup() {
