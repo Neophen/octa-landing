@@ -15,7 +15,7 @@ export default {
   },
   setup(props, { root }) {
     const iconPath = computed(() => {
-      return `/illustrations.svg#${props.icon}`;
+      return `/central/illustrations.svg#${props.icon}`;
     });
 
     return { iconPath };

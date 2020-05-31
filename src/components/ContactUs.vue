@@ -99,30 +99,28 @@ export default {
     };
 
     const onSubmit = async (e) => {
+      state.isLoading = true;
+      if (state.lastName) {
         state.showSuccess = true;
-      // state.isLoading = true;
-      // if (state.lastName) {
-      //   state.showSuccess = true;
-      //   return;
-      // }
-      // try {
-      //   const result = await emailjs.sendForm(
-      //     serviceId,
-      //     templateId,
-      //     e.target,
-      //     userId,
-      //   );
+        return;
+      }
+      try {
+        const result = await emailjs.sendForm(
+          serviceId,
+          templateId,
+          e.target,
+          userId,
+        );
 
-      //   if (result) {
-      //     state.showSuccess = true;
-      //     clearValues();
-      //   }
-      // } catch (error) {
-      //   console.log("FAILED...", error);
-
-      // } finally {
-      //   state.isLoading = false;
-      // }
+        if (result) {
+          state.showSuccess = true;
+          clearValues();
+        }
+      } catch (error) {
+        console.log("FAILED...", error);
+      } finally {
+        state.isLoading = false;
+      }
     };
 
     return {
