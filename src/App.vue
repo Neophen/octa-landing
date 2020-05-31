@@ -19,9 +19,3 @@ export default {
   },
 }
 </script>
-
-<style>
-@import url(./styles/app.css);
-
-
-</style>
