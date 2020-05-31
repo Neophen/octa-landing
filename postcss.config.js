@@ -3,7 +3,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     content: [
       './index.html',
       './App.vue',
-      './components/**/*.vue',
+      './src/**/*.vue',
       './views/**/*.vue',
       './main.js',
       './src/**/*.js',
