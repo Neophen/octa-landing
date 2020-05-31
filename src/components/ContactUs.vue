@@ -3,7 +3,7 @@
     id="book-a-demo"
     class="grid grid-cols-1 gap-24 pt-40 mx-auto md:grid-cols-2"
   >
-    <icon icon="contact-us" class="md:-mx-12" />
+    <icon icon="contact-us" class="md:-mx-12 md:-mt-2" style="height: 490px;" />
     <div>
       <h2 class="text-5xl font-bold leading-tight font-display text-h2-fluid">
         Book a demo
@@ -58,7 +58,7 @@
 </template>
 
 <script>
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 import { reactive, toRefs, ref, watch, computed } from "vue";
 
 import MailSent from "./MailSent.vue";
@@ -99,8 +99,8 @@ export default {
     };
 
     const onSubmit = async (e) => {
+        state.showSuccess = true;
       // state.isLoading = true;
-      state.showSuccess = true;
       // if (state.lastName) {
       //   state.showSuccess = true;
       //   return;

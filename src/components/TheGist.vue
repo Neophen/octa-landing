@@ -1,6 +1,6 @@
 <template>
   <div class="grid gap-24 mx-auto mt-40 auto-grid">
-    <icon icon="the-gist" class="auto-right" />
+    <icon icon="the-gist" class="auto-right" style="height: 472px;"/>
     <div class="auto-left">
       <h2 class="text-5xl leading-tight font-display text-h2-fluid">
         The only tool you need to run a film festival

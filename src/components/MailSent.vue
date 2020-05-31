@@ -6,9 +6,13 @@
     <div class="flex items-center justify-center w-full h-full">
       <div
         class="flex flex-col items-center p-16 text-center bg-white shadow-2xl rounded-modal"
-        :class="enterLeaveClass"
+        :class="
+          animateModalUpDown
+            ? 'animate__animated animate__slideInUp animate__faster'
+            : 'animate__animated animate__slideOutDown animate__faster'
+        "
       >
-        <icon icon="email-sent" class="max-w-sm mt-4" />
+        <icon icon="email-sent" class="w-full mt-4" style="height: 384px;" />
         <h2 class="mt-20 text-5xl leading-tight font-display text-h2-fluid">
           Message delivered to a human
         </h2>
@@ -45,15 +49,10 @@ export default {
   },
   setup(props, { emit }) {
     const showModal = ref(false);
-    const enterClass = ref(true);
-    const enterLeaveClass = computed(() =>
-      enterClass.value
-        ? "animate__animated animate__slideInUp"
-        : "animate__animated animate__slideOutDown",
-    );
+    const animateModalUpDown = ref(true);
 
     const close = () => {
-      enterClass.value = false;
+      animateModalUpDown.value = false;
       setTimeout(() => {
         emit("close");
         showModal.value = false;
@@ -64,13 +63,13 @@ export default {
       () => props.show,
       (shouldShow) => {
         showModal.value = shouldShow;
-        enterClass.value = shouldShow;
+        animateModalUpDown.value = shouldShow;
       },
     );
 
     return {
       showModal,
-      enterLeaveClass,
+      animateModalUpDown,
       close,
     };
   },
