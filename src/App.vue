@@ -3,6 +3,7 @@
   <TheGist />
   <ContactUs />
   <OctaFooter class="mt-64" />
+  <p>amazing</p>
 </div>
 </template>
 
