@@ -2,7 +2,7 @@
   <div>
     <div
       id="sidenav-overlay-btn"
-      class="absolute inset-0 z-0 hidden w-full h-full bg-gray-500 opacity-75"
+      class="fixed inset-0 z-0 hidden w-full h-full bg-gray-500 opacity-75"
       @click="closeNav"
       :style="navMobile"
     ></div>
@@ -26,9 +26,7 @@
       </div>
       <hr class="absolute mx-5 nav_mobile_hr" />
       <div class="absolute mx-5 signup_button_mobile">
-        <a href="#form" @click="closeNav" class="w-full signup_button"
-          >Signup for demo</a
-        >
+        <a href="#form" @click="closeNav" class="w-full signup_button">Signup for demo</a>
       </div>
     </div>
   </div>
@@ -110,8 +108,8 @@ export default {
       emit("close");
     };
 
-    const openDetails = (id) => {
-      state.details = state.details.map((item) => {
+    const openDetails = id => {
+      state.details = state.details.map(item => {
         if (item.id === id) {
           return {
             ...item,
@@ -151,23 +149,19 @@ export default {
       };
     });
 
-    const escapeHandler = (event) => {
+    const escapeHandler = event => {
       if (event.key === "Escape") {
         emit("close");
       }
     };
 
     const disableScroll = () => {
-      const scrollY = document.body.style.top;
-      window.scrollTo(0, parseInt(scrollY || "0") * -1);
       window.addEventListener("keydown", escapeHandler, true);
       document.body.classList.add("overflow-hidden");
       document.documentElement.classList.add("overflow-hidden");
     };
 
     const enableScroll = () => {
-      const scrollY = document.body.style.top;
-      window.scrollTo(0, parseInt(scrollY || "0") * -1);
       document.body.style.top = `-${window.scrollY}px`;
       window.removeEventListener("keydown", escapeHandler, true);
       document.body.classList.remove("overflow-hidden");
@@ -176,7 +170,7 @@ export default {
 
     watch(
       () => props.showNav,
-      (open) => {
+      open => {
         open ? disableScroll() : enableScroll();
       },
       { immediate: true },
