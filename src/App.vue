@@ -1,22 +1,33 @@
 <template>
-<div class="container mb-4">
-  <TheGist />
-  <ContactUs />
-  <OctaFooter class="mt-64" />
-  <p>amazing</p>
-</div>
+  <OctaHeader />
+  <MobileHeader />
+  <div class="container mb-4">
+    <TheGist />
+    <Support />
+    <Integrations />
+    <ContactUs />
+    <OctaFooter class="mt-64" />
+  </div>
 </template>
 
 <script>
 import TheGist from "./components/TheGist.vue";
-import ContactUs from './components/ContactUs.vue';
-import OctaFooter from './components/OctaFooter.vue';
+import ContactUs from "./components/ContactUs.vue";
+import OctaFooter from "./components/OctaFooter.vue";
+import OctaHeader from "./components/OctaHeader.vue";
+import Support from "./components/Support.vue";
+import Integrations from "./components/Integrations.vue";
+import MobileHeader from "./components/MobileHeader.vue";
 
 export default {
   components: {
     TheGist,
     ContactUs,
     OctaFooter,
+    OctaHeader,
+    Support,
+    Integrations,
+    MobileHeader,
   },
-}
+};
 </script>

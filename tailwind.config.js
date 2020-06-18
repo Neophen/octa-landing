@@ -13,14 +13,18 @@ module.exports = {
       colors: {
         'gray-100': 'var(--var-gray-100)',
         'gray-500': 'var(--var-gray-500)',
+        'gray-600': 'var(--var-gray-600)',
         'primary-400': 'var(--var-primary-400)',
         'primary-500': 'var(--var-primary-500)',
         'primary-600': 'var(--var-primary-600)',
+        'cream-500': 'var(--var-cream-500)',
+        'grey-500': 'var(--var-grey-500)',
       }
     },
   },
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [
     require('@tailwindcss/custom-forms'),

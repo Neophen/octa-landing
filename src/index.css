@@ -4,11 +4,14 @@
 @tailwind components;
 
 :root {
-  --var-gray-500: #3d3433;
+  --var-gray-500: #302B2B;
+  --var-gray-600: #202023;
   --var-gray-100: #fafafa;
   --var-primary-400: #A1E1E7;
   --var-primary-500: #81d3da;
   --var-primary-600: #79B6BB;
+  --var-cream-500: #FDF5F2;
+  --var-grey-500: #636363;
 }
 
 

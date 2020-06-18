@@ -1,17 +1,17 @@
 <template>
   <div class="grid gap-24 mx-auto mt-40 auto-grid">
-    <icon icon="the-gist" class="auto-right" style="height: 472px;"/>
+    <div class="auto-right">
+      <img src="/the-gist.svg" class="w-full h-auto" />
+    </div>
     <div class="auto-left">
-      <h2 class="text-5xl leading-tight font-display text-h2-fluid">
-        The only tool you need to run a film festival
-      </h2>
+      <h2
+        class="text-5xl leading-tight font-display text-h2-fluid text-gray-600"
+      >The only tool you need to run a film festival</h2>
       <p class="mt-6 text-lg leading-normal">
         Put your tech hassles away and do what you do best. Collaborate with
         your team to create a memorable festival experience for your guests.
       </p>
-      <Btn href="#book-a-demo">
-        Book a demo
-      </Btn>
+      <Btn href="#book-a-demo">Book a demo</Btn>
     </div>
   </div>
 </template>

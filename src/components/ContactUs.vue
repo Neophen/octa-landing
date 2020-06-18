@@ -1,18 +1,13 @@
 <template>
-  <div
-    id="book-a-demo"
-    class="grid grid-cols-1 gap-24 pt-40 mx-auto md:grid-cols-2"
-  >
-    <icon icon="contact-us" class="md:-mx-12 md:-mt-2" style="height: 490px;" />
+  <div id="book-a-demo" class="grid grid-cols-1 gap-24 pt-40 mx-auto md:grid-cols-2">
+    <img src="/contact-us.svg" class="md:-mx-12 md:-mt-2 w-full h-auto" />
     <div>
-      <h2 class="text-5xl font-bold leading-tight font-display text-h2-fluid">
-        Book a demo
-      </h2>
+      <h2
+        class="text-5xl font-bold leading-tight font-display text-h2-fluid text-gray-600"
+      >Book a demo</h2>
       <form class="mt-5 space-y-5" @submit.prevent="onSubmit">
         <label class="block">
-          <span class="mb-2 ml-3 text-sm text-gray-500 font-body"
-            >Full name</span
-          >
+          <span class="mb-2 ml-3 text-sm text-gray-500 font-body">Full name</span>
           <input
             v-model="full_name"
             name="full_name"
@@ -23,9 +18,7 @@
           />
         </label>
         <label class="block">
-          <span class="mb-2 ml-3 text-sm text-gray-500 font-body"
-            >Work e-mail</span
-          >
+          <span class="mb-2 ml-3 text-sm text-gray-500 font-body">Work e-mail</span>
           <input
             type="email"
             name="email"
@@ -48,9 +41,7 @@
           ></textarea>
         </label>
         <input type="text" v-model="lastName" name="last name" hidden />
-        <Btn tag="button" :disabled="isLoading">
-          {{ submitText }}
-        </Btn>
+        <Btn tag="button" :disabled="isLoading">{{ submitText }}</Btn>
       </form>
     </div>
   </div>
@@ -98,7 +89,7 @@ export default {
       state.lastName = "";
     };
 
-    const onSubmit = async (e) => {
+    const onSubmit = async e => {
       state.isLoading = true;
       if (state.lastName) {
         state.showSuccess = true;
