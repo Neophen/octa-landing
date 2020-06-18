@@ -1,6 +1,6 @@
 <template>
   <div>
-    <svg class="fill-current block w-full h-full">
+    <svg class="block w-full h-full fill-current">
       <use :href="iconPath" :xlink:href="iconPath" />
     </svg>
   </div>

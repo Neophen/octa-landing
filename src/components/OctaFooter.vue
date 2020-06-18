@@ -6,8 +6,12 @@
       <p class="leading-tight">Reg №: 231321421412</p>
       <p class="leading-tight">A.Jakšto g.9, 346</p>
       <p class="leading-tight">Vilnius, Lithuania</p>
-      <a class="block leading-tight underline" href="mailto:hello@octafest.com">hello@octafest.com</a>
-      <a class="block leading-tight underline" href="tel:+370 608 96 491">+370 608 96 491</a>
+      <a class="block leading-tight underline" href="mailto:hello@octafest.com"
+        >hello@octafest.com</a
+      >
+      <a class="block leading-tight underline" href="tel:+370 608 96 491"
+        >+370 608 96 491</a
+      >
     </div>
     <div class="space-y-3">
       <h3 class="font-bold leading-tight">Product</h3>

@@ -2,14 +2,18 @@
   <div
     class="py-3 md:hidden"
     :class="{
-    'top-0 sticky inset-y-0 bg-white z-10 shadow-md': shoulStick,
-    'block': !shoulStick
-  }"
+      'top-0 sticky inset-y-0 bg-white z-10 shadow-md': shoulStick,
+      block: !shoulStick,
+    }"
   >
-    <nav class="container items-center m-auto flex w-full">
+    <nav class="container flex items-center w-full m-auto">
       <div class="flex-1">
-        <a href="/" class="flex items-center phone_navbar_logo" style="width: 135px">
-          <icon icon="site-logo" style="height: 30px; width: 135px" />
+        <a
+          href="/"
+          class="flex items-center phone_navbar_logo"
+          style="width: 135px;"
+        >
+          <icon icon="site-logo" style="height: 30px; width: 135px;" />
         </a>
       </div>
       <button type="button" @click="openNav">
@@ -62,7 +66,7 @@ export default {
     const shoulStick = ref(false);
 
     const showNav = ref(false);
-    const updateSticky = e => {
+    const updateSticky = (e) => {
       if (window.scrollY > 0) {
         shoulStick.value = true;
       } else {

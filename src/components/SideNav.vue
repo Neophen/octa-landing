@@ -2,18 +2,18 @@
   <div>
     <div
       id="sidenav-overlay-btn"
-      class="absolute inset-0 w-full h-full bg-gray-500 opacity-75 z-0 hidden"
+      class="absolute inset-0 z-0 hidden w-full h-full bg-gray-500 opacity-75"
       @click="closeNav"
       :style="navMobile"
     ></div>
     <div
       id="Sidenav"
-      class="h-full fixed z-20 top-0 bg-white overflow-x-hidden duration-500 right-0 w-0 duration-500"
+      class="fixed top-0 right-0 z-20 w-0 h-full overflow-x-hidden duration-500 bg-white"
       :style="sliderStyles"
     >
       <div class="flex items-center">
         <icon icon="site-logo" />
-        <button @click="closeNav" class="text-4xl mr-5 ml-auto">&times;</button>
+        <button @click="closeNav" class="ml-auto mr-5 text-4xl">&times;</button>
       </div>
       <div class="flex flex-col my-nav">
         <DetailsDropdown
@@ -24,9 +24,11 @@
           @open="openDetails(detail.id)"
         />
       </div>
-      <hr class="mx-5 absolute nav_mobile_hr" />
-      <div class="mx-5 signup_button_mobile absolute">
-        <a href="#form" @click="closeNav" class="signup_button w-full">Signup for demo</a>
+      <hr class="absolute mx-5 nav_mobile_hr" />
+      <div class="absolute mx-5 signup_button_mobile">
+        <a href="#form" @click="closeNav" class="w-full signup_button"
+          >Signup for demo</a
+        >
       </div>
     </div>
   </div>
@@ -108,8 +110,8 @@ export default {
       emit("close");
     };
 
-    const openDetails = id => {
-      state.details = state.details.map(item => {
+    const openDetails = (id) => {
+      state.details = state.details.map((item) => {
         if (item.id === id) {
           return {
             ...item,
@@ -149,7 +151,7 @@ export default {
       };
     });
 
-    const escapeHandler = event => {
+    const escapeHandler = (event) => {
       if (event.key === "Escape") {
         emit("close");
       }
@@ -174,7 +176,7 @@ export default {
 
     watch(
       () => props.showNav,
-      open => {
+      (open) => {
         open ? disableScroll() : enableScroll();
       },
       { immediate: true },

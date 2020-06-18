@@ -1,10 +1,10 @@
 <template>
   <div class="mt-40">
-    <h3
-      class="text-3xl text-center font-display"
-    >Login, track &amp; share information the way you like</h3>
-    <div class="mx-auto max-w-4xl">
-      <div class="flex items-center flex-wrap justify-center -m-6">
+    <h3 class="text-3xl text-center font-display">
+      Login, track &amp; share information the way you like
+    </h3>
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-wrap items-center justify-center -m-6">
         <div v-for="item in items" :key="item.id" class="p-6">
           <Integration class="flex-1" :item="item" />
         </div>

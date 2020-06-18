@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col space-y-4 items-center mt-8">
+  <div class="flex flex-col items-center mt-8 space-y-4">
     <a
       :href="item.link"
       target="_blank"
-      class="bg-white shadow rounded-full flex items-center justify-center h-32 w-32"
+      class="flex items-center justify-center w-32 h-32 bg-white rounded-full shadow"
     >
       <icon class="w-20 h-20" :icon="item.icon" />
     </a>
