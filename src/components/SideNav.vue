@@ -1,13 +1,11 @@
 <template>
   <div>
     <div
-      id="sidenav-overlay-btn"
       class="fixed inset-0 z-0 hidden w-full h-full bg-gray-500 opacity-75"
       @click="closeNav"
       :style="navMobile"
     ></div>
     <div
-      id="Sidenav"
       class="fixed top-0 right-0 z-20 w-0 h-full overflow-x-hidden duration-500 bg-white"
       :style="sliderStyles"
     >
@@ -26,7 +24,9 @@
       </div>
       <hr class="absolute mx-5 nav_mobile_hr" />
       <div class="absolute mx-5 signup_button_mobile">
-        <a href="#form" @click="closeNav" class="w-full signup_button">Signup for demo</a>
+        <a href="#form" @click="closeNav" class="w-full signup_button"
+          >Signup for demo</a
+        >
       </div>
     </div>
   </div>
@@ -104,12 +104,11 @@ export default {
     });
 
     const closeNav = () => {
-      console.log("closing");
       emit("close");
     };
 
-    const openDetails = id => {
-      state.details = state.details.map(item => {
+    const openDetails = (id) => {
+      state.details = state.details.map((item) => {
         if (item.id === id) {
           return {
             ...item,
@@ -149,7 +148,7 @@ export default {
       };
     });
 
-    const escapeHandler = event => {
+    const escapeHandler = (event) => {
       if (event.key === "Escape") {
         emit("close");
       }
@@ -170,7 +169,7 @@ export default {
 
     watch(
       () => props.showNav,
-      open => {
+      (open) => {
         open ? disableScroll() : enableScroll();
       },
       { immediate: true },

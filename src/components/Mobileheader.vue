@@ -64,8 +64,8 @@ export default {
   },
   setup() {
     const shoulStick = ref(false);
-
     const showNav = ref(false);
+
     const updateSticky = (e) => {
       if (window.scrollY > 0) {
         shoulStick.value = true;
@@ -73,9 +73,9 @@ export default {
         shoulStick.value = false;
       }
     };
+
     const openNav = () => {
       showNav.value = true;
-      console.log("opening", showNav.value);
     };
 
     onMounted(() => {

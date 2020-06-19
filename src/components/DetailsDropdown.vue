@@ -47,7 +47,6 @@ export default {
     };
 
     const openDetails = () => {
-      console.log(props.detail.isOpen);
       emit("open");
     };
 
