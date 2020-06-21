@@ -42,6 +42,14 @@ body {
   grid-column: 1;
 }
 
+.grid-auto-cols-2 {
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+}
+
+.grid-auto-rows {
+  grid-auto-rows: auto;
+}
+
 .auto-right {
   grid-column: -2;
 }

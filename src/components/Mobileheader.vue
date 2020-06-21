@@ -8,12 +8,8 @@
   >
     <nav class="container flex items-center w-full m-auto">
       <div class="flex-1">
-        <a
-          href="/"
-          class="flex items-center phone_navbar_logo"
-          style="width: 135px;"
-        >
-          <icon icon="site-logo" style="height: 30px; width: 135px;" />
+        <a href="/" class="flex items-center phone_navbar_logo" style="width: 109px;">
+          <icon icon="site-logo" style="height: 30px; width: 109px;" />
         </a>
       </div>
       <button type="button" @click="openNav">
@@ -66,7 +62,7 @@ export default {
     const shoulStick = ref(false);
     const showNav = ref(false);
 
-    const updateSticky = (e) => {
+    const updateSticky = e => {
       if (window.scrollY > 0) {
         shoulStick.value = true;
       } else {

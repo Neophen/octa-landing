@@ -16,41 +16,30 @@
           <a
             href="#theGist"
             class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
-            >The gist</a
-          >
+          >The gist</a>
           <a
             href="#overview"
             class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
-            >Cases</a
-          >
+          >Tools</a>
           <a
             href="#overview"
             class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
-            >Tools</a
-          >
+          >Look</a>
           <a
             href="#overview"
             class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
-            >Look</a
-          >
+          >Support</a>
           <a
             href="#overview"
             class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
-            >Support</a
-          >
-          <a
-            href="#overview"
-            class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
-            >Integrations</a
-          >
+          >Integrations</a>
         </ul>
       </div>
       <a
         class="block w-auto py-3 font-bold text-center text-white rounded-full cursor-pointer md:inline-block bg-primary-500 text-title hover:bg-primary-400 active:bg-primary-600 focus:outline-none focus:shadow-outline"
         style="width: 180px;"
         href="#book-a-demo"
-        >Book a demo</a
-      >
+      >Book a demo</a>
     </nav>
   </div>
 </template>
@@ -66,7 +55,7 @@ export default {
   setup() {
     const shoulStick = ref(false);
 
-    const updateSticky = (e) => {
+    const updateSticky = e => {
       if (window.scrollY > 0) {
         shoulStick.value = true;
       } else {
