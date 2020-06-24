@@ -19,6 +19,7 @@ module.exports = {
         'primary-600': 'var(--var-primary-600)',
         'cream-500': 'var(--var-cream-500)',
         'grey-500': 'var(--var-grey-500)',
+        'teal-shadow': 'var(--teal-shadow)'
       }
     },
   },

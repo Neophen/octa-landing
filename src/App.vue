@@ -3,9 +3,10 @@
   <MobileHeader />
   <div class="container mb-4">
     <TheGist />
-    <Support />
     <Look />
+    <LookOptionOne />
     <LookOptionTwo />
+    <Support />
     <Integrations />
     <ContactUs />
     <OctaFooter class="mt-64" />
@@ -22,6 +23,7 @@ import Integrations from "./components/Integrations.vue";
 import MobileHeader from "./components/MobileHeader.vue";
 import Look from "./components/Look.vue";
 import LookOptionTwo from "./components/LookOptionTwo.vue";
+import LookOptionOne from "./components/LookOptionOne.vue";
 
 export default {
   components: {
@@ -34,6 +36,7 @@ export default {
     MobileHeader,
     Look,
     LookOptionTwo,
+    LookOptionOne,
   },
 };
 </script>

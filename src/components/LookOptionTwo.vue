@@ -3,10 +3,10 @@
     <div class="auto-right">
       <img src="/custom-theme.svg" class="w-full h-auto" />
     </div>
-    <div class="auto-left">
+    <div>
       <h3 class="absolute font-display text-2xl text-bold ">Option 2</h3>
       <div class="mb-5 mt-3">
-        <icon class icon="highlight" style="width: 129px; height: 20px" />
+        <icon icon="highlight" style="width: 129px; height: 20px" />
       </div>
       <h2
         class="text-5xl leading-tight text-gray-600 font-display text-h2-fluid"

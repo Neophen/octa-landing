@@ -12,6 +12,7 @@
   --var-primary-600: #79b6bb;
   --var-cream-500: #fdf5f2;
   --var-grey-500: #636363;
+  --var-teal-shadow: linear-gradient(90deg, #FAEBE2 84.18%, #FDF5F2 100%);
 }
 
 .container {
@@ -46,12 +47,36 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
 }
 
+.grid-auto-rows-209 {
+  grid-auto-rows: 209px;
+}
+
+.grid-auto-cols-271 {
+  grid-template-columns: repeat(auto-fill, minmax(271px, 1fr));
+}
+
 .grid-auto-rows {
   grid-auto-rows: auto;
 }
 
 .auto-right {
   grid-column: -2;
+}
+
+.three-card-main {
+  background: #FDF5F2;
+}
+
+.three-card {
+  background: linear-gradient(90deg, #FAEBE2 84.18%, #FDF5F2 100%);
+}
+
+.card:hover .three-card {
+  background: linear-gradient(90deg, #A6F3F9 84.18%, #C9FAFE 100%);
+}
+
+.card:hover .three-card-main {
+  background: #C9FAFE;
 }
 /* purgecss end ignore */
 
