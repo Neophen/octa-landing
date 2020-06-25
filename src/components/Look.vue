@@ -2,7 +2,10 @@
   <span id="look" class="block h-20 invisible"></span>
   <div class="grid gap-24 mx-auto mt-40 auto-grid">
     <div class="auto-right">
-      <img src="/central/the-gist.svg" class="w-full h-auto" />
+      <!-- <img src="/central/the-gist.svg" class="w-full h-auto" /> -->
+      <video class="w-full h-auto" controls autoplay loop>
+        <source src="/central/octafest-looks.mp4" type="video/mp4" />
+      </video>
     </div>
     <div class="auto-left">
       <h2

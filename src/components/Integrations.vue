@@ -7,7 +7,7 @@
       >Login, track &amp; share information the way you like</h3>
       <div class="max-w-4xl mx-auto">
         <div class="flex flex-wrap items-center justify-center">
-          <div v-for="item in items" :key="item.id" class="p-6">
+          <div v-for="item in items" :key="item.id" class="p-4 md:p-6">
             <Integration class="flex-1" :item="item" />
           </div>
         </div>
