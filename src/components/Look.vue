@@ -3,7 +3,7 @@
   <div class="grid gap-24 mx-auto mt-40 auto-grid">
     <div class="auto-right">
       <!-- <img src="/central/the-gist.svg" class="w-full h-auto" /> -->
-      <video class="w-full h-auto" controls autoplay loop>
+      <video class="w-full h-auto" autoplay loop>
         <source src="/central/octafest-looks.mp4" type="video/mp4" />
       </video>
     </div>
