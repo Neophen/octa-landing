@@ -1,7 +1,7 @@
 <template>
   <div class="grid gap-24 mx-auto mt-10 auto-grid">
     <div class="auto-right">
-      <img src="/the-gist.svg" class="w-full h-auto" />
+      <img src="/central/the-gist.svg" class="w-full h-auto" />
     </div>
     <div class="auto-left">
       <h2
@@ -17,13 +17,11 @@
 </template>
 
 <script>
-import Icon from "./Icon.vue";
 import Btn from "./Btn.vue";
 
 export default {
   name: "TheGist",
   components: {
-    Icon,
     Btn,
   },
 };

@@ -3,7 +3,7 @@
     id="book-a-demo"
     class="grid grid-cols-1 gap-24 pt-40 mx-auto md:grid-cols-2"
   >
-    <img src="/contact-us.svg" class="w-full h-auto md:-mx-12 md:-mt-2" />
+    <img src="/central/contact-us.svg" class="w-full h-auto md:-mx-12 md:-mt-2" />
     <div>
       <h2
         class="text-5xl font-bold leading-tight text-gray-600 font-display text-h2-fluid"
@@ -62,14 +62,12 @@ import emailjs from "emailjs-com";
 import { reactive, toRefs, ref, watch, computed } from "vue";
 
 import MailSent from "./MailSent.vue";
-import Icon from "./Icon.vue";
 import Btn from "./Btn.vue";
 
 export default {
   name: "ContactUs",
   components: {
     MailSent,
-    Icon,
     Btn,
   },
   setup() {
