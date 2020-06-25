@@ -5,6 +5,9 @@
       <div class="mb-5 mt-3">
         <icon class icon="highlight" style="width: 129px; height: 20px" />
       </div>
+      <h2
+        class="text-5xl mb-6 leading-tight text-gray-600 font-display text-h2-fluid"
+      >Create a distinct look using community theme</h2>
       <div class="grid grid-auto-rows-209 grid-auto-cols-280 gap-4">
         <div
           class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-md"
@@ -28,7 +31,10 @@
           <div class="fill-current">
             <icon icon="heart" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
           </div>
-          <h3 class="relative mt-3 ml-5 text-lg font-bold mb-2" style="font-family: Merriweather;">Logo</h3>
+          <h3
+            class="relative mt-3 ml-5 text-lg font-bold mb-2"
+            style="font-family: Merriweather;"
+          >Logo</h3>
           <p
             class="relative pb-3 pr-3 ml-5 text-lg text-grey-500 group-hover:text-black"
           >We are a whitelabel, just brand it with your logo.</p>
@@ -40,7 +46,10 @@
           <div class="fill-current">
             <icon icon="font" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
           </div>
-          <h3 class="relative mt-3 ml-5 text-lg font-bold mb-2" style="font-family: Merriweather;">Fonts</h3>
+          <h3
+            class="relative mt-3 ml-5 text-lg font-bold mb-2"
+            style="font-family: Merriweather;"
+          >Fonts</h3>
           <p
             class="relative pb-3 pr-3 ml-5 text-lg text-grey-500 group-hover:text-black"
           >Change fonts all over the website.</p>
@@ -52,7 +61,10 @@
           <div class="fill-current">
             <icon icon="colors" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
           </div>
-          <h3 class="relative mt-3 mb-2 ml-5 text-lg font-bold" style="font-family: Merriweather;">Colors</h3>
+          <h3
+            class="relative mt-3 mb-2 ml-5 text-lg font-bold"
+            style="font-family: Merriweather;"
+          >Colors</h3>
           <p
             class="relative pb-3 pr-3 ml-5 text-lg text-grey-500 group-hover:text-black"
           >Use your brand colors for better recognition.</p>
@@ -64,7 +76,10 @@
           <div class="fill-current">
             <icon icon="star" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
           </div>
-          <h3 class="relative mt-3 mb-2 ml-5 text-lg font-bold" style="font-family: Merriweather;">Icons</h3>
+          <h3
+            class="relative mt-3 mb-2 ml-5 text-lg font-bold"
+            style="font-family: Merriweather;"
+          >Icons</h3>
           <p
             class="relative pb-3 pr-3 ml-5 text-lg text-grey-500 group-hover:text-black"
           >Have an icon style? Replace default icons anytime.</p>

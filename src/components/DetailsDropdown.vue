@@ -1,27 +1,65 @@
 <template>
   <div>
     <details class="dropdown" :open="detail.isOpen">
-      <summary id="featured" class="flex items-center ml-5">
-        <button @click="openDetails">
-          <span class="flex items-center nav_mobile_title">
+      <summary id="featured" class="flex items-center ml-5" style="max-width: 50px;">
+        <button class="focus:outline-none" @click="openDetails">
+          <span
+            :class="{'text-primary-700':detail.isOpen}"
+            class="flex items-center text-2xl font-display text-gray-600 nav_mobile_title focus:text-primary-700 hover:text-primary-700"
+          >
             {{ detail.title }}
             <icon
               icon="arrow"
-              class="ml-4 arrow"
-              style="width= 11px; height=19px;"
+              class="ml-2 arrow"
+              style="width: 5px; height: 19px;"
+              :style="detail.isOpen ? 'transform: rotate(90deg)' :''"
             />
           </span>
         </button>
       </summary>
       <ul class="flex flex-col p-0 m-0">
-        <a
-          v-for="link in detail.links"
-          :key="link.id"
-          :href="link.url"
-          @click="closeNav"
-          class="ml-5 desktop_navbar_anchor"
-          >{{ link.title }}</a
-        >
+        <div v-for="link in detail.links">
+          <div
+            v-if="link.normal"
+            class="flex ml-5 hover:text-primary-700 items-center mb-2"
+            style="width: 10px;"
+          >
+            <p>•</p>
+            <a
+              :key="link.id"
+              :href="link.url"
+              @click="closeNav"
+              class="ml-1 text-lg underline whitespace-no-wrap"
+            >{{ link.title }}</a>
+          </div>
+          <div v-else-if="link.contact_link">
+            <div class="flex ml-5 hover:text-primary-700 items-center mb-2" style="width: 10px;">
+              <a
+                :key="link.id"
+                :href="link.url"
+                @click="closeNav"
+                class="ml-1 text-lg underline whitespace-no-wrap"
+              >{{ link.title }}</a>
+            </div>
+            <div v-if="link.icons" class="flex ml-5 mt-8 whitespace-no-wrap">
+              <a href="#" class="mr-3">
+                <img src="/central/linkedin_sidenav.svg" alt="linkedin" />
+              </a>
+              <a href="#" class="mr-3">
+                <img src="/central/facebook_sidenav.svg" alt="facebook" />
+              </a>
+              <a href="#" class="mr-3">
+                <img src="/central/instagram_sidenav.svg" alt="instagram" />
+              </a>
+              <a href="#">
+                <img src="/central/twitter_sidenav.svg" alt="twitter" />
+              </a>
+            </div>
+          </div>
+          <div v-else class="flex ml-5 items-center mb-2">
+            <p :key="link.id" class="ml-1 text-lg">{{ link.title }}</p>
+          </div>
+        </div>
       </ul>
     </details>
   </div>

@@ -10,6 +10,7 @@
   --var-primary-400: #a1e1e7;
   --var-primary-500: #81d3da;
   --var-primary-600: #79b6bb;
+  --var-primary-700: #32B8C3;
   --var-cream-500: #fdf5f2;
   --var-grey-500: #636363;
   --var-teal-shadow: linear-gradient(90deg, #FAEBE2 84.18%, #FDF5F2 100%);
@@ -76,6 +77,20 @@ body {
 
 .card:hover .three-card-main {
   background: #C9FAFE;
+}
+
+details > summary {
+  display: block;
+  white-space: nowrap;
+  outline: none;
+}
+
+summary::marker {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 /* purgecss end ignore */
 

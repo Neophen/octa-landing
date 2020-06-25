@@ -15,23 +15,23 @@
         <div class="flex-1">
           <ul class="p-0 m-0">
             <a
-              href="#theGist"
+              href="#the-gist"
               class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
             >The gist</a>
-            <a
+            <!-- <a
               href="#overview"
               class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
-            >Tools</a>
+            >Tools</a>-->
             <a
-              href="#overview"
+              href="#look"
               class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
             >Look</a>
             <a
-              href="#overview"
+              href="#support"
               class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
             >Support</a>
             <a
-              href="#overview"
+              href="#integrations"
               class="ml-3 text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
             >Integrations</a>
           </ul>

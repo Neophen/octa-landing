@@ -1,4 +1,5 @@
 <template>
+  <span id="integrations" class="block h-20 invisible"></span>
   <div>
     <div class="flex flex-col mt-40">
       <h3

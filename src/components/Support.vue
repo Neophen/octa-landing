@@ -1,4 +1,5 @@
 <template>
+  <span id="support" class="block h-10 invisible"></span>
   <div class="mt-40">
     <div class="mb-8">
       <h2

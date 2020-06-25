@@ -1,4 +1,5 @@
 <template>
+  <span id="the-gist" class="block h-20 -mt-20 invisible"></span>
   <div class="grid gap-24 mx-auto mt-10 auto-grid">
     <div class="auto-right">
       <img src="/central/the-gist.svg" class="w-full h-auto" />

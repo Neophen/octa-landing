@@ -17,6 +17,7 @@ module.exports = {
         'primary-400': 'var(--var-primary-400)',
         'primary-500': 'var(--var-primary-500)',
         'primary-600': 'var(--var-primary-600)',
+        'primary-700': 'var(--var-primary-700)',
         'cream-500': 'var(--var-cream-500)',
         'grey-500': 'var(--var-grey-500)',
         'teal-shadow': 'var(--teal-shadow)'
