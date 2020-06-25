@@ -1,6 +1,7 @@
 <template>
   <OctaHeader />
   <MobileHeader />
+  <div class="px-4">
   <div class="container mb-4">
     <TheGist />
     <Look />
@@ -10,6 +11,7 @@
     <Integrations />
     <ContactUs />
     <OctaFooter class="mt-64" />
+  </div>
   </div>
 </template>
 

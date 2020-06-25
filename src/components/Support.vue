@@ -3,12 +3,12 @@
     <div class="mb-8">
       <h2
         class="text-5xl leading-tight text-gray-600 font-display text-h2-fluid"
-      >The only tool you need to run a film festival</h2>
+      >Evolving for your success</h2>
       <p
         class="mt-2 text-lg leading-normal"
       >As a community member you will always have access to the latest tools and our continious support.</p>
     </div>
-    <div class="grid grid-auto-rows-209 grid-auto-cols-271 gap-6">
+    <div class="grid grid-auto-rows-209 grid-auto-cols-280 gap-4">
       <div
         class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-md"
         style="border-radius: 20px;"
@@ -17,7 +17,7 @@
           <icon icon="chat" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
         </div>
         <h3
-          class="relative mt-2 ml-5 text-lg font-bold"
+          class="relative mt-3 mb-2 ml-5 text-lg font-bold"
           style="font-family: Merriweather;"
         >Get help in live chat</h3>
         <p
@@ -32,7 +32,7 @@
           <icon icon="fresh-drink" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
         </div>
         <h3
-          class="relative mt-2 ml-5 text-lg font-bold"
+          class="relative mt-3 mb-2 ml-5 text-lg font-bold"
           style="font-family: Merriweather;"
         >Stay fresh</h3>
         <p
@@ -47,7 +47,7 @@
           <icon icon="bicycle" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
         </div>
         <h3
-          class="relative mt-2 ml-5 text-lg font-bold"
+          class="relative mt-3 mb-2 ml-5 text-lg font-bold"
           style="font-family: Merriweather;"
         >Public roadmap</h3>
         <p
@@ -62,7 +62,7 @@
           <icon icon="hand" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
         </div>
         <h3
-          class="relative mt-2 ml-5 text-lg font-bold"
+          class="relative mt-3 mb-2 ml-5 text-lg font-bold"
           style="font-family: Merriweather;"
         >User centered</h3>
         <p
@@ -77,7 +77,7 @@
           <icon icon="hosting-and-storage" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
         </div>
         <h3
-          class="relative mt-2 ml-5 text-lg font-bold"
+          class="relative mt-3 mb-2 ml-5 text-lg font-bold"
           style="font-family: Merriweather;"
         >Hosting &amp; storage</h3>
         <p
@@ -92,7 +92,7 @@
           <icon icon="downtime" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
         </div>
         <h3
-          class="relative mt-2 ml-5 text-lg font-bold"
+          class="relative mt-3 mb-2 ml-5 text-lg font-bold"
           style="font-family: Merriweather;"
         >Zero downtime</h3>
         <p
@@ -107,7 +107,7 @@
           <icon icon="backup" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
         </div>
         <h3
-          class="relative mt-2 ml-5 text-lg font-bold"
+          class="relative mt-3 mb-2 ml-5 text-lg font-bold"
           style="font-family: Merriweather;"
         >Daily backups</h3>
         <p
@@ -131,7 +131,7 @@
               <icon icon="more" class="mt-5 ml-5" style="width: 50px; height: 50px;" />
             </div>
             <h3
-              class="relative mt-2 ml-5 text-lg font-bold"
+              class="relative mt-3 mb-2 ml-5 text-lg font-bold"
               style="font-family: Merriweather;"
             >More on support</h3>
             <div class="flex items-center">
