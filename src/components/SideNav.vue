@@ -20,7 +20,7 @@
           :key="detail.id"
           :detail="detail"
           @close="closeNav"
-          @open="openDetails(detail.id)"
+          @toggle="toggleDetails(detail.id)"
         />
       </div>
       <div
@@ -239,12 +239,12 @@ export default {
       emit("close");
     };
 
-    const openDetails = id => {
+    const toggleDetails = id => {
       state.details = state.details.map(item => {
         if (item.id === id) {
           return {
             ...item,
-            isOpen: true,
+            isOpen: !item.isOpen,
           };
         }
 
@@ -316,7 +316,7 @@ export default {
       closeNav,
       sliderStyles,
       navMobile,
-      openDetails,
+      toggleDetails,
     };
   },
 };

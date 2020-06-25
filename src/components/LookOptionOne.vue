@@ -7,10 +7,11 @@
       </div>
       <h2
         class="text-5xl mb-6 leading-tight text-gray-600 font-display text-h2-fluid"
-      >Create a distinct look using community theme</h2>
+        style="text-size-adjust:none;"
+      >Create a distinct look using a community theme</h2>
       <div class="grid grid-auto-rows-209 grid-auto-cols-280 gap-4">
         <div
-          class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-md"
+          class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-card"
           style="border-radius: 20px;"
         >
           <div class="fill-current">
@@ -25,7 +26,7 @@
           >Create pages, add &amp; arrange information the way you like.</p>
         </div>
         <div
-          class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-md"
+          class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-card"
           style="border-radius: 20px;"
         >
           <div class="fill-current">
@@ -40,7 +41,7 @@
           >We are a whitelabel, just brand it with your logo.</p>
         </div>
         <div
-          class="relative block p-3 group bg-cream-500 text-default hover:bg-white hover:shadow-md"
+          class="relative block p-3 group bg-cream-500 text-default hover:bg-white hover:shadow-card"
           style="border-radius: 20px;"
         >
           <div class="fill-current">
@@ -55,7 +56,7 @@
           >Change fonts all over the website.</p>
         </div>
         <div
-          class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-md"
+          class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
           style="border-radius: 20px;"
         >
           <div class="fill-current">
@@ -70,7 +71,7 @@
           >Use your brand colors for better recognition.</p>
         </div>
         <div
-          class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-md"
+          class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
           style="border-radius: 20px;"
         >
           <div class="fill-current">
@@ -85,7 +86,7 @@
           >Have an icon style? Replace default icons anytime.</p>
         </div>
         <div
-          class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-md"
+          class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
           style="border-radius: 20px;"
         >
           <div class="fill-current">

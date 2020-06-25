@@ -4,12 +4,13 @@
       <img src="/central/custom-theme.svg" class="w-full h-auto" />
     </div>
     <div>
-      <h3 class="absolute text-2xl font-display text-bold ">Option 2</h3>
+      <h3 class="absolute text-2xl font-display text-bold">Option 2</h3>
       <div class="mt-3 mb-5">
         <icon icon="highlight" style="width: 129px; height: 20px" />
       </div>
       <h2
         class="text-5xl leading-tight text-gray-600 font-display text-h2-fluid"
+        style="text-size-adjust:none;"
       >Order a custom theme</h2>
       <p
         class="mt-6 text-lg font-semibold leading-normal text-gray-600 font-display"

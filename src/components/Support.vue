@@ -4,6 +4,7 @@
     <div class="mb-8">
       <h2
         class="text-5xl leading-tight text-gray-600 font-display text-h2-fluid"
+        style="text-size-adjust:none;"
       >Evolving for your success</h2>
       <p
         class="mt-2 text-lg leading-normal"
@@ -11,7 +12,7 @@
     </div>
     <div class="grid grid-auto-rows-209 grid-auto-cols-280 gap-4">
       <div
-        class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-md"
+        class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
         <div class="fill-current">
@@ -26,7 +27,7 @@
         >Open for all community members</p>
       </div>
       <div
-        class="relative block p-3 group bg-cream-500 text-default hover:bg-white hover:shadow-md"
+        class="relative block p-3 group bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
         <div class="fill-current">
@@ -41,7 +42,7 @@
         >Get equipped with modern tools &amp; processes</p>
       </div>
       <div
-        class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-md"
+        class="relative block p-3 rounded group bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
         <div class="fill-current">
@@ -56,7 +57,7 @@
         >Share feedback and vote for features</p>
       </div>
       <div
-        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-md"
+        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
         <div class="fill-current">
@@ -71,7 +72,7 @@
         >Best design methodologies in action</p>
       </div>
       <div
-        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-md"
+        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
         <div class="fill-current">
@@ -86,7 +87,7 @@
         >Keep servers, documents &amp; images where you need them.</p>
       </div>
       <div
-        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-md"
+        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
         <div class="fill-current">
@@ -101,7 +102,7 @@
         >We launch new features frequently, but no downtime.</p>
       </div>
       <div
-        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-md"
+        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
         <div class="fill-current">
