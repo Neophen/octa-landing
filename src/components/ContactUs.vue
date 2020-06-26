@@ -3,7 +3,7 @@
     <img src="/central/contact-us.svg" class="w-full h-auto md:-mx-12 md:-mt-2" />
     <div>
       <h2
-        class="text-5xl font-bold leading-tight text-gray-600 font-display text-h2-fluid"
+        class="text-4xl font-bold leading-tight text-gray-600 font-display"
         style="text-size-adjust:none;"
       >Book a demo</h2>
       <form class="mt-5 space-y-5" @submit.prevent="onSubmit">

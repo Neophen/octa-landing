@@ -6,7 +6,7 @@
     </div>
     <div class="auto-left">
       <h2
-        class="text-5xl leading-tight text-gray-600 font-display text-h2-fluid" style="text-size-adjust:none;"
+        class="text-4xl leading-tight text-gray-600 font-display"
       >The only tool you need to run a film festival</h2>
       <p
         class="mt-6 text-lg leading-normal"

@@ -3,8 +3,7 @@
   <div class="mt-40">
     <div class="mb-8">
       <h2
-        class="text-5xl leading-tight text-gray-600 font-display text-h2-fluid"
-        style="text-size-adjust:none;"
+        class="text-4xl leading-tight text-gray-600 font-display"
       >Evolving for your success</h2>
       <p
         class="mt-2 text-lg leading-normal"

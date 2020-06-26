@@ -9,7 +9,7 @@
         <icon icon="highlight" style="width: 129px; height: 20px" />
       </div>
       <h2
-        class="text-5xl leading-tight text-gray-600 font-display text-h2-fluid"
+        class="text-4xl leading-tight text-gray-600 font-display"
         style="text-size-adjust:none;"
       >Order a custom theme</h2>
       <p

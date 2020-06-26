@@ -6,8 +6,7 @@
         <icon class icon="highlight" style="width: 129px; height: 20px" />
       </div>
       <h2
-        class="text-5xl mb-6 leading-tight text-gray-600 font-display text-h2-fluid"
-        style="text-size-adjust:none;"
+        class="text-4xl mb-6 leading-tight text-gray-600 font-display"
       >Create a distinct look using a community theme</h2>
       <div class="grid grid-auto-rows-209 grid-auto-cols-280 gap-4">
         <div

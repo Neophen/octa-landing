@@ -12,8 +12,7 @@
     </div>
     <div class="auto-left">
       <h2
-        class="text-5xl leading-tight text-gray-600 font-display text-h2-fluid"
-        style="text-size-adjust: none;"
+        class="text-4xl leading-tight text-gray-600 font-display"
       >
         Beautifully easy, reliable, fast. Yours.
       </h2>
