@@ -33,6 +33,7 @@ module.exports = {
         'primary-500': 'var(--var-primary-500)',
         'primary-600': 'var(--var-primary-600)',
         'primary-700': 'var(--var-primary-700)',
+        'primary-img': 'var(--var-primary-img)',
         'cream-500': 'var(--var-cream-500)',
         'grey-500': 'var(--var-grey-500)',
         'teal-shadow': 'var(--teal-shadow)'
@@ -53,6 +54,7 @@ module.exports = {
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'active'],
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
   },
   plugins: [
     require('@tailwindcss/custom-forms'),

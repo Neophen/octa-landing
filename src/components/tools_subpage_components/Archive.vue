@@ -1,7 +1,7 @@
 <template>
   <div class="grid gap-24 mx-auto auto-grid mt-40">
     <div class="auto-right">
-      <img src="/central/the-gist.svg" class="w-full h-auto" />
+      <img src="/central/octafest-archive.svg" class="w-full h-auto" />
     </div>
     <div class="auto-left">
       <h2 class="text-4xl leading-tight text-gray-600 font-display">Archive made easy</h2>

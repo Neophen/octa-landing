@@ -2,15 +2,15 @@
   <span id="the-gist" class="block h-20 -mt-20 invisible"></span>
   <div class="grid gap-24 mx-auto mt-10 auto-grid">
     <div class="auto-right">
-      <img src="/central/the-gist.svg" class="w-full h-auto" />
+      <img src="/central/natural-collaboration.svg" class="w-full h-auto" />
     </div>
     <div class="auto-left">
       <h2
         class="text-4xl leading-tight text-gray-600 font-display"
-      >The most advanced collaborative toolkit for your team</h2>
+      >Natural collaboration for your team</h2>
       <p
         class="mt-6 text-lg font-semibold leading-normal text-gray-600 font-display"
-      >Explore what is the special in each area:</p>
+      >Designed for flexible flow of information:</p>
       <ul class="list-decimal ml-4 mt-2 text-lg">
         <li class="underline">Page editor</li>
         <li class="underline">Editions &amp; archive manager</li>

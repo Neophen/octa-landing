@@ -8,7 +8,7 @@
           style="border-radius: 20px;"
         >
           <div class="fill-current">
-            <img src="../../../central/film.svg" class="mt-5 ml-5" alt="film" />
+            <img src="/central/film.svg" class="mt-5 ml-5" alt="film" />
             <!-- <icon icon="structure" class="mt-5 ml-5" style="width: 50px; height: 50px;" /> -->
           </div>
           <h3
@@ -24,7 +24,7 @@
           style="border-radius: 20px;"
         >
           <div class="fill-current">
-            <img src="../../../central/events2.svg" class="mt-5 ml-5" alt="events" />
+            <img src="/central/events2.svg" class="mt-5 ml-5" alt="events" />
             <!-- <icon icon="heart" class="mt-5 ml-5" style="width: 50px; height: 50px;" /> -->
           </div>
           <h3
@@ -40,7 +40,7 @@
           style="border-radius: 20px;"
         >
           <div class="fill-current">
-            <img src="../../../central/bundles.svg" class="mt-5 ml-5" alt="bundles" />
+            <img src="/central/bundles.svg" class="mt-5 ml-5" alt="bundles" />
             <!-- <icon icon="font" class="mt-5 ml-5" style="width: 50px; height: 50px;" /> -->
           </div>
           <h3
@@ -56,7 +56,7 @@
           style="border-radius: 20px;"
         >
           <div class="fill-current">
-            <img src="../../../central/sections.svg" class="mt-5 ml-5" alt="sections" />
+            <img src="/central/sections.svg" class="mt-5 ml-5" alt="sections" />
             <!-- <icon icon="colors" class="mt-5 ml-5" style="width: 50px; height: 50px;" /> -->
           </div>
           <h3
@@ -72,7 +72,7 @@
           style="border-radius: 20px;"
         >
           <div class="fill-current">
-            <img src="../../../central/sponsor.svg" class="mt-5 ml-5" alt="sponsor" />
+            <img src="/central/sponsor.svg" class="mt-5 ml-5" alt="sponsor" />
             <!-- <icon icon="star" class="mt-5 ml-5" style="width: 50px; height: 50px;" /> -->
           </div>
           <h3
@@ -88,7 +88,7 @@
           style="border-radius: 20px;"
         >
           <div class="fill-current">
-            <img src="../../../central/recommendations.svg" class="mt-5 ml-5" alt="recommendations" />
+            <img src="/central/recommendations.svg" class="mt-5 ml-5" alt="recommendations" />
             <!-- <icon icon="camera" class="mt-5 ml-5" style="width: 50px; height: 50px;" /> -->
           </div>
           <h3
@@ -104,7 +104,7 @@
           style="border-radius: 20px;"
         >
           <div class="fill-current">
-            <img src="../../../central/schedule.svg" class="mt-5 ml-5" alt="schedule" />
+            <img src="/central/schedule.svg" class="mt-5 ml-5" alt="schedule" />
             <!-- <icon icon="camera" class="mt-5 ml-5" style="width: 50px; height: 50px;" /> -->
           </div>
           <h3
@@ -120,7 +120,7 @@
           style="border-radius: 20px;"
         >
           <div class="fill-current">
-            <img src="../../../central/location.svg" class="mt-5 ml-5" alt="location" />
+            <img src="/central/location.svg" class="mt-5 ml-5" alt="location" />
             <!-- <icon icon="camera" class="mt-5 ml-5" style="width: 50px; height: 50px;" /> -->
           </div>
           <h3

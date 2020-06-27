@@ -1,7 +1,21 @@
 <template>
   <div class="grid gap-24 mx-auto auto-grid mt-40">
     <div class="auto-right">
-      <img src="/central/the-gist.svg" class="w-full h-auto" />
+      <img
+        src="/central/octafest-users-gif.gif"
+        class="block w-full h-auto sm:hidden shadow"
+        style="border-radius: 20px;"
+      />
+      <video
+        class="hidden w-full h-auto sm:block shadow"
+        style="border-radius: 20px;"
+        autoplay
+        loop
+        muted
+      >
+        <source src="/central/octafest-users-lowres.mp4" type="video/mp4" />
+      </video>
+      <p class="text-center mt-4">Click on image to open in full screen</p>
     </div>
     <div class="auto-left">
       <h2 class="text-4xl leading-tight text-gray-600 font-display">7. Users</h2>
