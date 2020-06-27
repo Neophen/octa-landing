@@ -11,12 +11,18 @@
     </div>
     <div class="space-y-3">
       <h3 class="font-bold leading-tight">Product</h3>
-      <p class="leading-tight">Management tools</p>
-      <p class="leading-tight">Website tools</p>
-      <p class="leading-tight">Support</p>
-      <p class="leading-tight">Pricing</p>
-      <p class="leading-tight">Privacy policy</p>
-      <p class="leading-tight">Security</p>
+      <div class="flex flex-col space-y-3">
+      <a
+        href="/ToolsSubpage"
+        class="leading-tight"
+        :class="{ active: isActive(routes.to) }"
+      >Management tools</a>
+      <a class="leading-tight">Website tools</a>
+      <a class="leading-tight">Support</a>
+      <a class="leading-tight">Pricing</a>
+      <a class="leading-tight">Privacy policy</a>
+      <a class="leading-tight">Security</a>
+      </div>
     </div>
     <div class="space-y-3">
       <h3 class="font-bold leading-tight">Community</h3>
@@ -37,7 +43,17 @@
 </template>
 
 <script>
+import { computed } from "vue";
+import { useRouter } from "vue-router";
+
 export default {
   name: "OctaFooter",
+  setup() {
+    const routes = [{ to: "/ToolsSubpage", text: "ToolsSubpage" }];
+    const router = useRouter();
+    const activeRoute = computed(() => router.currentRoute.value.path);
+    const isActive = path => path === activeRoute.value;
+    return { isActive, routes };
+  },
 };
 </script>

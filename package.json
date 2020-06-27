@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "emailjs-com": "^2.4.1",
-    "vue": "^3.0.0-beta.15"
+    "vue": "^3.0.0-beta.15",
+    "vue-router": "^4.0.0-alpha.11"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
