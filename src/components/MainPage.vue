@@ -4,6 +4,7 @@
   <div class="px-4">
     <div class="container mb-4">
       <TheGist />
+      <Tools />
       <Look />
       <LookOptionOne />
       <LookOptionTwo />
@@ -26,6 +27,7 @@ import MobileHeader from "./MobileHeader.vue";
 import Look from "./Look.vue";
 import LookOptionTwo from "./LookOptionTwo.vue";
 import LookOptionOne from "./LookOptionOne.vue";
+import Tools from "./Tools.vue";
 
 export default {
   name: "MainPage",
@@ -40,6 +42,7 @@ export default {
     Look,
     LookOptionTwo,
     LookOptionOne,
+    Tools,
   },
 };
 </script>

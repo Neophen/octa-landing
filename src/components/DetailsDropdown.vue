@@ -1,9 +1,6 @@
 <template>
   <div>
-    <button
-      class="focus:outline-none flex items-center ml-5"
-      @click="toggleDetails"
-    >
+    <button class="focus:outline-none flex items-center ml-5" @click="toggleDetails">
       <span
         :class="{'text-primary-700':detail.isOpen}"
         class="flex items-center text-2xl font-display text-gray-600 nav_mobile_title focus:text-primary-700 hover:text-primary-700"
@@ -11,7 +8,7 @@
         {{ detail.title }}
         <icon
           icon="arrow"
-          class="ml-2 arrow"
+          class="ml-2 arrow duration-100"
           style="width: 5px; height: 19px;"
           :style="detail.isOpen ? 'transform: rotate(90deg)' :''"
         />
@@ -43,16 +40,16 @@
             >{{ link.title }}</a>
           </div>
           <div v-if="link.icons" class="flex ml-5 mt-8 whitespace-no-wrap">
-            <a href="#" class="mr-3">
+            <a href="https://www.linkedin.com/company/octafest" target="_blank" class="mr-3">
               <img src="/central/linkedin_sidenav.svg" alt="linkedin" />
             </a>
-            <a href="#" class="mr-3">
+            <a href="https://www.facebook.com/octafestplatform" target="_blank" class="mr-3">
               <img src="/central/facebook_sidenav.svg" alt="facebook" />
             </a>
-            <a href="#" class="mr-3">
+            <a href="https://www.instagram.com/octafest" target="_blank" class="mr-3">
               <img src="/central/instagram_sidenav.svg" alt="instagram" />
             </a>
-            <a href="#">
+            <a href="https://twitter.com/Octafest1" target="_blank">
               <img src="/central/twitter_sidenav.svg" alt="twitter" />
             </a>
           </div>
@@ -87,8 +84,6 @@ export default {
     const toggleDetails = () => {
       emit("toggle");
     };
-
-
 
     return {
       closeNav,

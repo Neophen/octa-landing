@@ -7,10 +7,20 @@
     <div class="auto-left">
       <h2
         class="text-4xl leading-tight text-gray-600 font-display"
-      >The only tool you need to run a film festival</h2>
+      >The most advanced collaborative toolkit for your team</h2>
       <p
-        class="mt-6 text-lg leading-normal"
-      >Leave tech hassles behind and enjoy the creative freedom. Collaborate with your team to create a memorable festival experience for your guests.</p>
+        class="mt-6 text-lg font-semibold leading-normal text-gray-600 font-display"
+      >Explore what is the special in each area:</p>
+      <ul class="list-decimal ml-4 mt-2 text-lg">
+        <li class="underline">Page editor</li>
+        <li class="underline">Editions &amp; archive manager</li>
+        <li class="underline">Competitive program manager</li>
+        <li class="underline">Off-season tools</li>
+        <li class="underline">Posts streams</li>
+        <li class="underline">Sponsors</li>
+        <li class="underline">Users</li>
+        <li class="underline">Tag library</li>
+      </ul>
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <span id="look" class="invisible block h-20"></span>
-  <div class="grid gap-24 mx-auto mt-40 auto-grid">
+  <div class="grid gap-24 mx-auto mt-14 auto-grid">
     <div class="auto-right">
       <img
         src="/central/octafest-looks.gif"
