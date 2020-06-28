@@ -1,8 +1,8 @@
 <template>
   <span id="tools" class="block h-20 -mt-20 invisible"></span>
   <div class="mt-40">
-    <img src="../../public/central/left.svg" class="absolute left-0 hidden 2xl:block" alt="left" />
-    <img src="../../public/central/right.svg" class="absolute right-0 hidden 2xl:block" alt="right" />
+    <img src="../../central/left.svg" class="absolute left-0 hidden 2xl:block" alt="left" />
+    <img src="../../central/right.svg" class="absolute right-0 hidden 2xl:block" alt="right" />
     <h2
       class="text-4xl mb-6 text-center leading-tight text-gray-600 font-display"
     >Program visually. Present on snazzy web &amp; mobile.</h2>
@@ -19,6 +19,7 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
         <icon icon="play" class="play" style="height: 37px; width: 37px;" />
       </div>
       <div class="w-full shadow-card bg-primary-500" style="height: 500px; border-radius: 20px;">
+        <img src="/central/octafest-looks.gif" class="block w-full h-full sm:hidden object-cover" />
         <video class="hidden w-full h-full sm:block object-cover" autoplay loop muted>
           <source src="/central/octafest-looks-2.mp4" type="video/mp4" />
         </video>
