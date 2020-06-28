@@ -15,7 +15,7 @@
             type="text"
             placeholder="Your name..."
             required
-            class="block w-full px-4 py-2 mt-1 border border-gray-400 rounded-large form-input"
+            class="block w-full px-4 py-2 mt-1 border border-gray-400 rounded-large form-input shadow-none"
           />
         </label>
         <label class="block">
@@ -24,7 +24,7 @@
             type="email"
             name="email"
             v-model="email"
-            class="block w-full px-4 py-2 mt-1 border border-gray-400 rounded-large form-input"
+            class="block w-full px-4 py-2 mt-1 border border-gray-400 rounded-large form-input shadow-none"
             placeholder="Your email address..."
             required
           />
@@ -35,7 +35,7 @@
           <textarea
             name="message"
             v-model="message"
-            class="block w-full px-4 py-2 mt-1 border border-gray-400 resize-none rounded-large form-textarea"
+            class="block w-full px-4 py-2 mt-1 border border-gray-400 resize-none rounded-large form-textarea shadow-none"
             rows="5"
             placeholder="Your message..."
             required

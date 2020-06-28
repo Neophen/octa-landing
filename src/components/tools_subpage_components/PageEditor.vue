@@ -1,21 +1,44 @@
 <template>
   <div class="grid gap-24 mx-auto auto-grid mt-40">
     <div class="auto-right">
-      <img
-        src="/central/octafest-page-editor-gif-opt.gif"
-        class="block w-full h-auto sm:hidden shadow-md"
+      <div
+        class="w-full relative cursor-pointer sub-video h-auto sm:hidden grid"
         style="border-radius: 20px;"
-      />
-      <video
-        class="hidden w-full h-auto sm:block shadow-md"
-        style="border-radius: 20px;"
-        autoplay
-        loop
-        muted
       >
-        <source src="/central/octafest-page-editor-lowres.mp4" type="video/mp4" />
-      </video>
-      <p class="text-center mt-4">Click on image to open in full screen</p>
+        <img
+          src="/central/octafest-page-editor-gif-opt.gif"
+          class="w-full vid h-auto shadow-md"
+          style="border-radius: 20px;"
+        />
+        <div
+          class="absolute flex fullscreen cursor-pointer bg-white rounded-full px-3 py-1 self-center items-center"
+          style="justify-self: center;"
+        >
+          <img src="/central/fullscreen.svg" class="mr-2" />
+          <p class="text-lg">Click to view full screen</p>
+        </div>
+      </div>
+      <div
+        class="sm:grid relative hidden cursor-pointer sub-video w-full h-auto"
+        style="border-radius: 20px;"
+      >
+        <video
+          class=" w-full vid h-auto shadow-md"
+          style="border-radius: 20px;"
+          autoplay
+          loop
+          muted
+        >
+          <source src="/central/octafest-page-editor-lower-fast.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute flex fullscreen cursor-pointer bg-white rounded-full px-3 py-1 self-center items-center"
+          style="justify-self: center;"
+        >
+          <img src="/central/fullscreen.svg" class="mr-2" />
+          <p class="text-lg">Click to view full screen</p>
+        </div>
+      </div>
     </div>
     <div class="auto-left">
       <h2 class="text-4xl leading-tight text-gray-600 font-display">1. Page editor</h2>

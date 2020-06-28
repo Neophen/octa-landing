@@ -113,6 +113,31 @@ summary::-webkit-details-marker {
 .video-state:hover .black-shadow{
   display: none;
 }
+
+.fullscreen {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.vid {
+  transition: 0.5s;
+}
+
+.sub-video:hover {
+  background: rgba(195, 231, 236, 0.2);
+  border: 1px solid #81D3DA;
+  transition: 0.5s;
+}
+
+.sub-video:hover .fullscreen {
+  opacity: 1;
+}
+
+.sub-video:hover .vid {
+  opacity: 0.5;
+}
+
+
 /* purgecss end ignore */
 
 /* Utilities */

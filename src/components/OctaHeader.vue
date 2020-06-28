@@ -10,7 +10,7 @@
       <nav class="container flex items-center w-full m-auto">
         <a href="#" class="flex items-center">
           <icon icon="site-logo" style="height: 42px; width: 135px;" />
-          <icon icon="spacer" style="height: 20px; width: 2px;" />
+          <icon icon="spacer" class="ml-3" style="height: 20px; width: 2px;" />
         </a>
         <div class="flex-1">
           <ul class="p-0 m-0">
