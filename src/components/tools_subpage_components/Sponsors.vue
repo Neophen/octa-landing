@@ -3,7 +3,7 @@
     <div class="auto-right">
       <div
         @click="showImage = true"
-        class="w-full relative cursor-pointer sub-video h-auto sm:hidden grid"
+        class="w-full relative cursor-pointer sub-video h-auto md:hidden grid"
         style="border-radius: 20px;"
       >
         <img
@@ -21,7 +21,7 @@
       </div>
       <div
         @click="showImage = true"
-        class="sm:grid relative hidden cursor-pointer sub-video w-full h-auto"
+        class="md:grid relative hidden cursor-pointer sub-video w-full h-auto"
         style="border-radius: 20px;"
       >
         <video class="w-full vid h-auto shadow-md" style="border-radius: 20px;" autoplay loop muted>
@@ -65,10 +65,19 @@
 
           <div class="modal-body relative flex justify-center items-center">
             <video
-              class="max-w-full h-auto"
+              class="max-w-full h-auto md:block hidden focus:outline-none"
               style="border-radius: 20px;"
               controls
               autoplay
+              loop
+              muted
+            >
+              <source src="/central/octafest-sponsors-highres.mp4" type="video/mp4" />
+            </video>
+            <video
+              class="max-w-full h-auto md:hidden block focus:outline-none"
+              style="border-radius: 20px;"
+              controls
               loop
               muted
             >

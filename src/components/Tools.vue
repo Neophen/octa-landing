@@ -18,7 +18,7 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
       >
         <icon icon="play" class="play" style="height: 37px; width: 37px;" />
       </div>
-      <div class="w-full shadow-card bg-primary-500" style="height: 500px; border-radius: 20px;">
+      <div class="w-full shadow-card bg-primary-500 cursor-pointer" style="height: 500px; border-radius: 20px;">
         <img src="/central/octafest-looks.gif" class="block object-cover w-full h-full sm:hidden" />
         <video class="hidden object-cover w-full h-full sm:block" autoplay loop muted>
           <source src="/central/octafest-looks-2.mp4" type="video/mp4" />
