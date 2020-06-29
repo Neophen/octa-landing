@@ -120,12 +120,6 @@
 import { watch } from "vue";
 export default {
   name: "Users",
-  props: {
-    showNav: {
-      type: Boolean,
-      required: true,
-    },
-  },
   setup() {
     let showImage = false;
 

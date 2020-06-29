@@ -18,7 +18,11 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
       >
         <icon icon="play" class="play" style="height: 37px; width: 37px;" />
       </div>
-      <div class="w-full shadow-card bg-primary-500 cursor-pointer" style="height: 500px; border-radius: 20px;">
+      <div
+        @click="showImage = true"
+        class="w-full shadow-card bg-primary-500 cursor-pointer"
+        style="height: 500px; border-radius: 20px;"
+      >
         <img src="/central/octafest-looks.gif" class="block object-cover w-full h-full sm:hidden" />
         <video class="hidden object-cover w-full h-full sm:block" autoplay loop muted>
           <source src="/central/octafest-looks-2.mp4" type="video/mp4" />
@@ -26,11 +30,62 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
       </div>
     </div>
     <div
+      v-if="showImage"
+      class="fixed top-0 left-0 z-30 w-full h-full flex items-center justify-center"
+      id="fullImg"
+      tabindex="-1"
+    >
+      <div
+        @click="showImage = false"
+        class="fixed top-0 left-0 z-20 w-full h-full overflow-auto overflow-auto img-full"
+        style="background-color: rgba(0, 0, 0, .6);"
+      ></div>
+      <div
+        class="modal-content z-20"
+        style="width: 75%;
+    animation-name: zoom;
+    animation-duration: 0.6s;"
+      >
+        <div class="flex flex-end mb-4" @click="showImage = false">
+          <p class="flex-1"></p>
+          <div
+            class="cursor-pointer relative bg-white rounded-full flex items-center justify-center mr-3"
+            style="height: 40px; width: 40px"
+          >
+            <p class="text-4xl text-black focus:outline-none">&times;</p>
+          </div>
+        </div>
+
+        <div class="modal-body relative flex justify-center items-center">
+          <video
+            class="max-w-full h-auto md:block hidden focus:outline-none"
+            style="border-radius: 20px;"
+            controls
+            autoplay
+            loop
+            muted
+          >
+            <source src="/central/octafest-users-highres.mp4" type="video/mp4" />
+          </video>
+          <video
+            class="max-w-full h-auto md:hidden block focus:outline-none"
+            style="border-radius: 20px;"
+            controls
+            loop
+            muted
+          >
+            <source src="/central/octafest-users-highres.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+    <div
       class="container relative grid gap-5 px-8 grid-auto-cols-266 grid-auto-rows-275"
       style="top: -124px"
     >
       <div
-        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
+        @click="showImage = true"
+        class="relative block p-3 rounded cursor-pointer group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
         <div class="fill-current">
@@ -53,7 +108,8 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
         </div>
       </div>
       <div
-        class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
+        @click="showImage = true"
+        class="relative cursor-pointer block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
         <div class="fill-current">
@@ -75,7 +131,8 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
           />
         </div>
       </div>
-      <div
+      <a
+        href="#look"
         class="relative block p-3 rounded group bg bg-cream-500 text-default hover:bg-white hover:shadow-card"
         style="border-radius: 20px;"
       >
@@ -99,7 +156,7 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
             style="width: 24px; height: 24px;"
           />
         </div>
-      </div>
+      </a>
       <div class="relative">
         <div class="absolute w-full h-full group card" style="min-width: 240px;">
           <div class="absolute w-full h-full three-card" style="border-radius: 20px; "></div>
@@ -144,6 +201,13 @@ export default {
   name: "Tools",
   components: {
     Icon,
+  },
+  setup() {
+    let showImage = false;
+
+    return {
+      showImage,
+    };
   },
 };
 </script>
