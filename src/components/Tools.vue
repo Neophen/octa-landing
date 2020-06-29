@@ -109,7 +109,7 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
           ></div>
 
           <a
-            href="/ToolsSubpage"
+            href="/tools"
             class="absolute block h-full p-3 rounded three-card-main bg-cream-500 text-default"
             style="border-radius: 20px; width: 78%;"
           >
