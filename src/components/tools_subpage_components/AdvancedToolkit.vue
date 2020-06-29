@@ -12,14 +12,30 @@
         class="mt-6 text-lg font-semibold leading-normal text-gray-600 font-display"
       >Designed for flexible flow of information:</p>
       <ul class="list-decimal ml-4 mt-2 text-lg">
-        <li class="underline">Page editor</li>
-        <li class="underline">Editions &amp; archive manager</li>
-        <li class="underline">Competitive program manager</li>
-        <li class="underline">Off-season tools</li>
-        <li class="underline">Posts streams</li>
-        <li class="underline">Sponsors</li>
-        <li class="underline">Users</li>
-        <li class="underline">Tag library</li>
+        <li>
+          <a class="underline" href="#page-editor">Page editor</a>
+        </li>
+        <li>
+          <a class="underline" href="#editions">Editions &amp; archive manager</a>
+        </li>
+        <li>
+          <a class="underline" href="#program-manager">Competitive program manager</a>
+        </li>
+        <li>
+          <a class="underline" href="#off-season">Off-season tools</a>
+        </li>
+        <li>
+          <a class="underline" href="#post-streams">Posts streams</a>
+        </li>
+        <li>
+          <a class="underline" href="#sponsors">Sponsors</a>
+        </li>
+        <li>
+          <a class="underline" href="#users">Users</a>
+        </li>
+        <li>
+          <a class="underline" href="#tag-library">Tag library</a>
+        </li>
       </ul>
     </div>
   </div>

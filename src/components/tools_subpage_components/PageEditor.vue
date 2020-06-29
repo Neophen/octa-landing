@@ -1,4 +1,5 @@
 <template>
+<span id="page-editor" class="block h-20 invisible"></span>
   <div class="grid gap-24 mx-auto auto-grid mt-40">
     <div class="auto-right">
       <div
