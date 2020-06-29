@@ -1,32 +1,32 @@
 <template>
-  <span id="tools" class="block h-20 -mt-20 invisible"></span>
+  <span id="tools" class="invisible block h-20 -mt-20"></span>
   <div class="mt-40">
-    <img src="../../central/left.svg" class="absolute left-0 hidden 2xl:block" alt="left" />
-    <img src="../../central/right.svg" class="absolute right-0 hidden 2xl:block" alt="right" />
+    <img src="/central/left.svg" class="absolute left-0 hidden 2xl:block" alt="left" />
+    <img src="/central/right.svg" class="absolute right-0 hidden 2xl:block" alt="right" />
     <h2
-      class="text-4xl mb-6 text-center leading-tight text-gray-600 font-display"
+      class="mb-6 text-4xl leading-tight text-center text-gray-600 font-display"
     >Program visually. Present on snazzy web &amp; mobile.</h2>
-    <div class="video-state relative grid">
+    <div class="relative grid video-state">
       <div
-        class="absolute w-full bottom-0 black-shadow"
+        class="absolute bottom-0 w-full black-shadow"
         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
 border-radius: 0px 0px 20px 20px; height: 210px; "
       ></div>
       <div
-        class="absolute flex bg-white items-center self-center justify-center rounded-full"
+        class="absolute flex items-center self-center justify-center bg-white rounded-full"
         style="width: 80px; height: 80px; justify-self: center;"
       >
         <icon icon="play" class="play" style="height: 37px; width: 37px;" />
       </div>
       <div class="w-full shadow-card bg-primary-500" style="height: 500px; border-radius: 20px;">
-        <img src="/central/octafest-looks.gif" class="block w-full h-full sm:hidden object-cover" />
-        <video class="hidden w-full h-full sm:block object-cover" autoplay loop muted>
+        <img src="/central/octafest-looks.gif" class="block object-cover w-full h-full sm:hidden" />
+        <video class="hidden object-cover w-full h-full sm:block" autoplay loop muted>
           <source src="/central/octafest-looks-2.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
     <div
-      class="container relative grid gap-5 grid-auto-cols-266 grid-auto-rows-275 px-8"
+      class="container relative grid gap-5 px-8 grid-auto-cols-266 grid-auto-rows-275"
       style="top: -124px"
     >
       <div
@@ -34,7 +34,7 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
         style="border-radius: 20px;"
       >
         <div class="fill-current">
-          <img src="../../central/intuitive.svg" class="mt-5 ml-5" alt="intuitive" />
+          <img src="/central/intuitive.svg" class="mt-5 ml-5" alt="intuitive" />
         </div>
         <h3
           class="relative mt-3 mb-2 ml-5 text-lg font-bold"
@@ -57,7 +57,7 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
         style="border-radius: 20px;"
       >
         <div class="fill-current">
-          <img src="../../central/collaborate.svg" class="mt-5 ml-5" alt="collaborate" />
+          <img src="/central/collaborate.svg" class="mt-5 ml-5" alt="collaborate" />
         </div>
         <h3
           class="relative mt-3 mb-2 ml-5 text-lg font-bold"
@@ -80,7 +80,7 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
         style="border-radius: 20px;"
       >
         <div class="fill-current">
-          <img src="../../central/deliver-content.svg" class="mt-5 ml-5" alt="deliver-content" />
+          <img src="/central/deliver-content.svg" class="mt-5 ml-5" alt="deliver-content" />
         </div>
         <h3
           class="relative mt-3 mb-2 ml-5 text-lg font-bold"
@@ -101,20 +101,20 @@ border-radius: 0px 0px 20px 20px; height: 210px; "
         </div>
       </div>
       <div class="relative">
-        <div class="absolute group card w-full h-full" style="min-width: 240px;">
-          <div class="three-card absolute h-full w-full" style="border-radius: 20px; "></div>
+        <div class="absolute w-full h-full group card" style="min-width: 240px;">
+          <div class="absolute w-full h-full three-card" style="border-radius: 20px; "></div>
           <div
-            class="three-card absolute h-full bg-teal-shadow"
+            class="absolute h-full three-card bg-teal-shadow"
             style="border-radius: 20px; width: 90%;"
           ></div>
 
           <a
             href="/ToolsSubpage"
-            class="absolute three-card-main block p-3 rounded bg-cream-500 text-default h-full"
+            class="absolute block h-full p-3 rounded three-card-main bg-cream-500 text-default"
             style="border-radius: 20px; width: 78%;"
           >
             <div class="fill-current">
-              <img src="../../central/more.svg" class="mt-5 ml-5" alt="more" />
+              <img src="/central/more.svg" class="mt-5 ml-5" alt="more" />
             </div>
             <h3
               class="relative mt-3 mb-2 ml-5 text-lg font-bold"
