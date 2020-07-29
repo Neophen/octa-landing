@@ -15,11 +15,6 @@ const mainLinks = [
     component: 'Subscription',
   },
   {
-    url: "#team",
-    label: "Team",
-    component: 'Team',
-  },
-  {
     url: "#look",
     label: "Website theme",
     component: 'YourOctafest',
@@ -33,6 +28,11 @@ const mainLinks = [
     url: "#integrations",
     label: "Integrations",
     component: 'Integrations',
+  },
+  {
+    url: "#team",
+    label: "Team",
+    component: 'Team',
   },
 ];
 

@@ -5,27 +5,30 @@
       target="_blank"
       class="flex items-center justify-center w-32 h-32 bg-white rounded-full shadow"
     >
-      <icon class="w-20 h-20" :icon="item.icon" />
+      <icon v-if="icon" class="w-20 h-20" :icon="item.icon" pack="integrations" />
+      <img v-else class="w-20 h-20" :src="imgSrc" />
     </a>
     <p>{{ item.title }}</p>
   </div>
 </template>
 
 <script>
-import Icon from "./Icon.vue";
-import Btn from "./Btn.vue";
-
 export default {
   name: "Integration",
-  components: {
-    Icon,
-    Btn,
-  },
   props: {
     item: {
       type: Object,
       required: true,
     },
+    icon: {
+      type: Boolean,
+      default: true,
+    }
+  },
+  computed: {
+    imgSrc() {
+      return this.icon ? null : `/central/icons/integrations/${this.item.icon}`;
+    }
   },
 };
 </script>
