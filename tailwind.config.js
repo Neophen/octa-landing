@@ -21,6 +21,10 @@ module.exports = {
       '2xl': '1850px',
     },
     extend: {
+      zIndex: {
+        '-1': '-1',
+        '-2': '-2',
+      },
       borderRadius: {
         large: '20px',
         modal: '40px',
@@ -40,9 +44,16 @@ module.exports = {
         'primary-700': 'var(--var-primary-700)',
         'primary-img': 'var(--var-primary-img)',
         'cream-500': 'var(--var-cream-500)',
+        'cream-600': '#FAF1D5',
+        'blue-300': '#C9FAFE',
         'grey-500': 'var(--var-grey-500)',
         'teal-shadow': 'var(--teal-shadow)'
-      }
+      },
+      backgroundColor: theme => ({
+        ...theme('colors'),
+        '90-cream' : 'linear-gradient(90deg, #FAEBE2 84.18%, #FDF5F2 100%)',
+        '90-blue' : 'linear-gradient(90deg, #A6F3F9 84.18%, #C9FAFE 100%)',
+      }),
     },
     boxShadow: {
       'default': '0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)',
@@ -57,7 +68,7 @@ module.exports = {
     }
   },
   variants: {
-    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
     opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     borderWidth: ['responsive', 'hover', 'focus'],

@@ -10,11 +10,11 @@
   --var-primary-400: #a1e1e7;
   --var-primary-500: #81d3da;
   --var-primary-600: #79b6bb;
-  --var-primary-700: #32B8C3;
+  --var-primary-700: #32b8c3;
   --var-primary-img: rgba(195, 231, 236, 0.2);
   --var-cream-500: #fdf5f2;
   --var-grey-500: #636363;
-  --var-teal-shadow: linear-gradient(90deg, #FAEBE2 84.18%, #FDF5F2 100%);
+  --var-teal-shadow: linear-gradient(90deg, #faebe2 84.18%, #fdf5f2 100%);
 }
 
 .container {
@@ -33,6 +33,15 @@ body {
   background: var(--var-gray-100);
   font-family: "Source Sans Pro", sans-serif;
   color: var(--var-gray-500);
+}
+
+@variants group-hover {
+  .bg-cream-fade-90 {
+    background: linear-gradient(90deg, #faebe2 84.18%, #fdf5f2 100%);
+  }
+  .bg-blue-fade-90 {
+    background: linear-gradient(90deg, #A6F3F9 84.18%, #C9FAFE 100%);
+  }
 }
 
 .auto-grid {
@@ -73,19 +82,19 @@ body {
 }
 
 .three-card-main {
-  background: #FDF5F2;
+  background: #fdf5f2;
 }
 
 .three-card {
-  background: linear-gradient(90deg, #FAEBE2 84.18%, #FDF5F2 100%);
+  background: linear-gradient(90deg, #faebe2 84.18%, #fdf5f2 100%);
 }
 
 .card:hover .three-card {
-  background: linear-gradient(90deg, #A6F3F9 84.18%, #C9FAFE 100%);
+  background: linear-gradient(90deg, #a6f3f9 84.18%, #c9fafe 100%);
 }
 
 .card:hover .three-card-main {
-  background: #C9FAFE;
+  background: #c9fafe;
 }
 
 details > summary {
@@ -106,11 +115,11 @@ summary::-webkit-details-marker {
   opacity: 0.8;
 }
 
-.video-state:hover .play{
-  color: #81D3DA;
+.video-state:hover .play {
+  color: #81d3da;
 }
 
-.video-state:hover .black-shadow{
+.video-state:hover .black-shadow {
   display: none;
 }
 
@@ -125,7 +134,7 @@ summary::-webkit-details-marker {
 
 .sub-video:hover {
   background: rgba(195, 231, 236, 0.2);
-  border: 1px solid #81D3DA;
+  border: 1px solid #81d3da;
   transition: 0.5s;
 }
 

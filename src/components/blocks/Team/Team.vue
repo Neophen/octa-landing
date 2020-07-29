@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <oh2 class="text-center">Octafest team</oh2>
+  <div :id="id">
+    <oh2 class="text-center">{{title}}</oh2>
     <GridList width="260px" class="mt-10">
       <Member v-for="member in team" :key="member.photo" :member="member" />
     </GridList>
@@ -15,7 +15,14 @@ export default {
   components: {
     Member,
   },
+  props: {
+    link: {
+      type: Object,
+      required: true,
+    },
+  },
   data: () => ({
+    title: 'Octafest team',
     team: [
       {
         photo: "mykolas",
@@ -43,5 +50,10 @@ export default {
       },
     ],
   }),
+  computed: {
+    id() {
+      return this.link.url.replace('#', '');
+    }
+  },
 };
 </script>

@@ -22,7 +22,7 @@ const mainLinks = [
   {
     url: "#look",
     label: "Look",
-    component: 'Look',
+    component: 'YourOctafest',
   },
   {
     url: "#support",

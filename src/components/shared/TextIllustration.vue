@@ -1,7 +1,9 @@
 <template>
   <div :id="id" class="grid gap-24 auto-grid">
     <div class="relative auto-right">
-      <img :src="imgSrc" class="w-full h-auto" />
+      <slot name="image">
+        <img v-if="img" :src="imgSrc" class="w-full h-auto" />
+      </slot>
       <blob v-if="blobs" icon="rounded-blue" position="-282:0:64:78" right />
       <blob v-if="blobs" icon="u-cream" position="-124:463:51:42" right />
     </div>
@@ -31,7 +33,7 @@ export default {
     },
     img: {
       type: String,
-      required: true,
+      required: false,
     },
     blobs: {
       type: Boolean,
