@@ -1,0 +1,75 @@
+<template>
+  <div
+    id="nav"
+    class="items-center hidden py-3 md:block"
+    :class="{
+      'top-0 sticky inset-y-0 bg-white z-10 shadow-md': shoulStick,
+    }"
+  >
+    <div class="px-4">
+      <nav class="container flex items-center w-full m-auto">
+        <a :href="logoLink" class="flex items-center">
+          <icon icon="site-logo" style="height: 42px; width: 135px;" />
+          <icon icon="spacer" class="ml-3" style="height: 20px; width: 2px;" />
+        </a>
+        <div class="flex-1">
+          <ul class="space-x-3">
+            <a
+              v-for="link in links"
+              :key="link.url"
+              :href="link.url"
+              class="text-base leading-tight text-black hover:text-teal-500 focus:text-teal-500"
+              >{{ link.label }}</a
+            >
+          </ul>
+        </div>
+        <a
+          class="block w-auto py-3 font-bold text-center text-white rounded-full cursor-pointer md:inline-block bg-primary-500 text-title hover:bg-primary-400 active:bg-primary-600 focus:outline-none focus:shadow-outline"
+          style="width: 180px;"
+          href="#book-a-demo"
+          >Book a demo</a
+        >
+      </nav>
+    </div>
+  </div>
+</template>
+
+<script>
+import { ref, onMounted, onBeforeUnmount } from "vue";
+export default {
+  name: "OctaHeader",
+  props: {
+    logoLink: {
+      type: String,
+      default: "/",
+    },
+    links: {
+      type: Array,
+      default: () => [],
+    },
+  },
+  setup() {
+    const shoulStick = ref(false);
+
+    const updateSticky = (e) => {
+      if (window.scrollY > 0) {
+        shoulStick.value = true;
+      } else {
+        shoulStick.value = false;
+      }
+    };
+
+    onMounted(() => {
+      window.addEventListener("scroll", updateSticky);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener("scroll", updateSticky);
+    });
+
+    return {
+      shoulStick,
+    };
+  },
+};
+</script>

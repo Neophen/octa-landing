@@ -2,8 +2,8 @@ module.exports = {
   purge: false,
   theme: {
     fontFamily: {
-      'display': ["Merriweather", 'serif'],
-      'body': ["Source Sans Pro", 'sans-serif'],
+      'heading': ["Merriweather", 'serif'],
+      'text': ["Source Sans Pro", 'sans-serif'],
     },
     screens: {
       'sm': '640px',
@@ -24,6 +24,10 @@ module.exports = {
       borderRadius: {
         large: '20px',
         modal: '40px',
+      },
+      spacing: {
+        '7': '1.75rem',
+        '13': '3.125rem',
       },
       colors: {
         'gray-100': 'var(--var-gray-100)',
