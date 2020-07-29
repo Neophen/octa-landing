@@ -21,13 +21,13 @@ const mainLinks = [
   },
   {
     url: "#look",
-    label: "Look",
+    label: "Website theme",
     component: 'YourOctafest',
   },
   {
     url: "#support",
-    label: "Support",
-    component: 'Support',
+    label: "Your success",
+    component: 'YourSuccess',
   },
   {
     url: "#integrations",
