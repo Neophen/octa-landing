@@ -31,7 +31,7 @@ export default {
       // console.log(left, top, w, h);
       const x = this.right ? "right" : "left";
       const y = this.bottom ? "bottom" : "top";
-      return `${x}: ${left}px; ${y}: ${top}px; width: ${w}px; height: ${h}px;`;
+      return `${x}: ${left}px; ${y}: ${top}px; width: ${w}px; height: ${h}px; z-index: -1;`;
     },
   },
 };

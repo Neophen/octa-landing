@@ -3,15 +3,8 @@
   <!-- <MobileHeader /> -->
   <div class="px-4">
     <div class="container mb-4">
-      <component v-for="link in links" :key="link.url" :is="link.component" class="pt-20" />
-      <!-- <TheGist />
-      <Tools />
-      <Look />
-      <LookOptionOne />
-      <LookOptionTwo />
-      <Support />
-      <Integrations />
-      <ContactUs />
+      <component v-for="link in links" :key="link.url" :is="link.component" :link="link" class="mt-44" />
+
       <OctaFooter class="mt-64" /> -->
     </div>
   </div>
