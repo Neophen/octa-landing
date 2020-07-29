@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <TextIllustration :id="id" :title="title">
+  <div :id="id">
+    <TextIllustration  :title="title">
       <template v-slot:image>
         <img
           src="/central/animations/octafest-looks.gif"

@@ -1,16 +1,19 @@
 <template>
   <div>
-    <button class="focus:outline-none flex items-center ml-5" @click="toggleDetails">
+    <button
+      class="flex items-center ml-5 focus:outline-none"
+      @click="toggleDetails"
+    >
       <span
-        :class="{'text-primary-700':detail.isOpen}"
-        class="flex items-center text-2xl font-heading text-gray-600 nav_mobile_title focus:text-primary-700 hover:text-primary-700"
+        :class="{ 'text-primary-700': detail.isOpen }"
+        class="flex items-center text-2xl text-gray-600 font-heading nav_mobile_title focus:text-primary-700 hover:text-primary-700"
       >
         {{ detail.title }}
         <icon
           icon="arrow"
-          class="ml-2 arrow duration-100"
+          class="ml-2 duration-100 arrow"
           style="width: 5px; height: 19px;"
-          :style="detail.isOpen ? 'transform: rotate(90deg)' :''"
+          :style="detail.isOpen ? 'transform: rotate(90deg)' : ''"
         />
       </span>
     </button>
@@ -19,7 +22,7 @@
       <div v-for="link in detail.links">
         <div
           v-if="link.normal"
-          class="flex ml-5 hover:text-primary-700 items-center mb-2"
+          class="flex items-center mb-2 ml-5 hover:text-primary-700"
           style="width: 10px;"
         >
           <p>•</p>
@@ -28,25 +31,42 @@
             :href="link.url"
             @click="closeNav"
             class="ml-1 text-lg underline whitespace-no-wrap"
-          >{{ link.title }}</a>
+            >{{ link.title }}</a
+          >
         </div>
         <div v-else-if="link.contact_link">
-          <div class="flex ml-5 hover:text-primary-700 items-center mb-2" style="width: 10px;">
+          <div
+            class="flex items-center mb-2 ml-5 hover:text-primary-700"
+            style="width: 10px;"
+          >
             <a
               :key="link.id"
               :href="link.url"
               @click="closeNav"
               class="ml-1 text-lg underline whitespace-no-wrap"
-            >{{ link.title }}</a>
+              >{{ link.title }}</a
+            >
           </div>
-          <div v-if="link.icons" class="flex ml-5 mt-8 whitespace-no-wrap">
-            <a href="https://www.linkedin.com/company/octafest" target="_blank" class="mr-3">
+          <div v-if="link.icons" class="flex mt-8 ml-5 whitespace-no-wrap">
+            <a
+              href="https://www.linkedin.com/company/octafest"
+              target="_blank"
+              class="mr-3"
+            >
               <img src="/central/linkedin_sidenav.svg" alt="linkedin" />
             </a>
-            <a href="https://www.facebook.com/octafestplatform" target="_blank" class="mr-3">
+            <a
+              href="https://www.facebook.com/octafestplatform"
+              target="_blank"
+              class="mr-3"
+            >
               <img src="/central/facebook_sidenav.svg" alt="facebook" />
             </a>
-            <a href="https://www.instagram.com/octafest" target="_blank" class="mr-3">
+            <a
+              href="https://www.instagram.com/octafest"
+              target="_blank"
+              class="mr-3"
+            >
               <img src="/central/instagram_sidenav.svg" alt="instagram" />
             </a>
             <a href="https://twitter.com/Octafest1" target="_blank">
@@ -54,7 +74,7 @@
             </a>
           </div>
         </div>
-        <div v-else class="flex ml-5 items-center mb-2">
+        <div v-else class="flex items-center mb-2 ml-5">
           <p :key="link.id" class="ml-1 text-lg">{{ link.title }}</p>
         </div>
       </div>
@@ -64,12 +84,9 @@
 
 <script>
 import { computed } from "vue";
-import Icon from "./Icon.vue";
+
 export default {
   name: "DetailsDropdown",
-  components: {
-    Icon,
-  },
   props: {
     detail: {
       type: Object,

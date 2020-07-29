@@ -24,12 +24,7 @@
         </p>
       </div>
       <div class="flex items-center mt-5 md:mt-0">
-        <a
-          class="block w-auto py-3 font-bold text-center text-white bg-white rounded-full cursor-pointer align-right text-title"
-          style="width: 180px; border: 0.5px solid #333338; color: #333338;"
-          href="#book-a-demo"
-          >Send a message</a
-        >
+        <Btn href="#book-a-demo">Send a message</Btn>
       </div>
     </div>
   </div>

@@ -16,7 +16,7 @@ const mainLinks = [
   },
   {
     url: "#look",
-    label: "Website theme",
+    label: "Your look",
     component: 'YourOctafest',
   },
   {

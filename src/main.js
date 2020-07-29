@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import VueScrollactive from "vue-scrollactive";
 import App from './App.vue';
 import './index.css'
 import router from "./router";
@@ -16,5 +17,7 @@ for (const name in blockComponents) {
   const component = blockComponents[name];
   app.component(component.name, component);
 }
+
+app.use(VueScrollactive);
 
 app.mount('#app')

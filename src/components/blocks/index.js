@@ -5,3 +5,4 @@ export { default as Subscription } from "./Subscription";
 export { default as YourOctafest } from "./YourOctafest";
 export { default as YourSuccess } from "./YourSuccess";
 export { default as Integrations } from "./Integrations";
+export { default as ContactUs } from "./ContactUs";

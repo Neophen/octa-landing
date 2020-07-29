@@ -11,7 +11,12 @@
     >
       <div class="flex items-center ml-5">
         <icon icon="site-logo" style="width: 100px; height: 30px;" />
-        <button @click="closeNav" class="ml-auto mr-5 text-4xl focus:outline-none">&times;</button>
+        <button
+          @click="closeNav"
+          class="ml-auto mr-5 text-4xl focus:outline-none"
+        >
+          &times;
+        </button>
       </div>
       <hr style="border: 1px solid #bab9bb;" class="mx-5 mb-5" />
       <div class="flex flex-col my-nav">
@@ -24,35 +29,31 @@
         />
       </div>
       <div
-        class="absolute items-center justify-center flex flex-col"
-        style="bottom: 40px; width: 315px"
+        class="absolute flex flex-col items-center justify-center"
+        style="bottom: 40px; width: 315px;"
       >
-        <p
-          class="text-lg mb-5 text-center"
-          style="width: 265px"
-        >Start managing your film festival the easy way</p>
+        <p class="mb-5 text-lg text-center" style="width: 265px;">
+          Start managing your film festival the easy way
+        </p>
         <a
           href="#book-a-demo"
           @click="closeNav"
-          style="width: 275px"
+          style="width: 275px;"
           class="block py-3 font-bold text-center text-white rounded-full cursor-pointer md:inline-block bg-primary-500 text-title hover:bg-primary-400 active:bg-primary-600 focus:outline-none focus:shadow-outline"
-        >Signup for demo</a>
+          >Signup for demo</a
+        >
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Icon from "./Icon.vue";
-import Btn from "./Btn.vue";
 import { computed, watch, onBeforeUnmount, reactive, toRefs } from "vue";
 import DetailsDropdown from "./DetailsDropdown.vue";
 
 export default {
   name: "SideNav",
   components: {
-    Icon,
-    Btn,
     DetailsDropdown,
   },
   props: {
@@ -239,8 +240,8 @@ export default {
       emit("close");
     };
 
-    const toggleDetails = id => {
-      state.details = state.details.map(item => {
+    const toggleDetails = (id) => {
+      state.details = state.details.map((item) => {
         if (item.id === id) {
           return {
             ...item,
@@ -280,7 +281,7 @@ export default {
       };
     });
 
-    const escapeHandler = event => {
+    const escapeHandler = (event) => {
       if (event.key === "Escape") {
         emit("close");
       }
@@ -301,7 +302,7 @@ export default {
 
     watch(
       () => props.showNav,
-      open => {
+      (open) => {
         open ? disableScroll() : enableScroll();
       },
       { immediate: true },

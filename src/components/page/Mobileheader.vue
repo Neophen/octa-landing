@@ -9,7 +9,11 @@
     <div class="px-4">
       <nav class="container flex items-center w-full m-auto">
         <div class="flex-1">
-          <a href="/" class="flex items-center phone_navbar_logo" style="width: 109px;">
+          <a
+            href="/"
+            class="flex items-center phone_navbar_logo"
+            style="width: 109px;"
+          >
             <icon icon="site-logo" style="height: 30px; width: 109px;" />
           </a>
         </div>
@@ -49,22 +53,18 @@
 
 <script>
 import { ref, onMounted, onBeforeUnmount } from "vue";
-import Icon from "./Icon.vue";
-import Btn from "./Btn.vue";
 import SideNav from "./SideNav.vue";
 
 export default {
   name: "MobileHeader",
   components: {
-    Icon,
-    Btn,
     SideNav,
   },
   setup() {
     const shoulStick = ref(false);
     const showNav = ref(false);
 
-    const updateSticky = e => {
+    const updateSticky = (e) => {
       if (window.scrollY > 0) {
         shoulStick.value = true;
       } else {

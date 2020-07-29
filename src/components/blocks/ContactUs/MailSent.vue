@@ -32,15 +32,8 @@
 <script>
 import { computed, watch, ref } from "vue";
 
-import Icon from "./Icon.vue";
-import Btn from "./Btn.vue";
-
 export default {
   name: "MailSent",
-  components: {
-    Icon,
-    Btn,
-  },
   props: {
     show: {
       type: Boolean,
