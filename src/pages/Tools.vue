@@ -1,26 +1,28 @@
 <template>
-  <OctaHeader :links="links" :logo-link="logoLink" />
-  <MobileHeader />
-  <div class="px-4">
-    <div class="container mb-4">
-      <AdvancedToolkit
-        class="mt-44"
-        :links="components"
-        style="scroll-margin: 150px 0 0 0;"
-      />
+  <div class="w-screen overflow-x-hidden">
+    <OctaHeader :links="links" :logo-link="logoLink" />
+    <MobileHeader />
+    <div class="px-4">
+      <div class="container mb-4">
+        <AdvancedToolkit
+          class="mt-44"
+          :links="components"
+          style="scroll-margin: 150px 0 0 0;"
+        />
 
-      <component
-        v-for="(link, i) in components"
-        :key="link.url"
-        :is="link.component"
-        :link="link"
-        :index="i"
-        class="mt-44"
-        style="scroll-margin: 150px 0 0 0;"
-      />
+        <component
+          v-for="(link, i) in components"
+          :key="link.url"
+          :is="link.component"
+          :link="link"
+          :index="i"
+          class="mt-44"
+          style="scroll-margin: 150px 0 0 0;"
+        />
 
-      <ContactUs class="mt-44" style="scroll-margin: 150px 0 0 0;" />
-      <OctaFooter class="mt-64" />
+        <ContactUs class="mt-44" style="scroll-margin: 150px 0 0 0;" />
+        <OctaFooter class="mt-64" />
+      </div>
     </div>
   </div>
 </template>

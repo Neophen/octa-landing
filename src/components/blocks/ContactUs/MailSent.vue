@@ -1,30 +1,28 @@
 <template>
   <div
     v-if="showModal"
-    class="fixed inset-0 z-50 w-screen h-screen overflow-auto bg-teal-100 bg-opacity-75"
+    class="fixed inset-0 z-50 flex items-center justify-center w-screen h-screen bg-teal-100 bg-opacity-75 overflow-hidded"
   >
-    <div class="flex items-center justify-center w-full h-full">
-      <div
-        class="flex flex-col items-center p-16 text-center bg-white shadow-2xl rounded-modal"
-        :class="
-          animateModalUpDown
-            ? 'animate__animated animate__slideInUp animate__faster'
-            : 'animate__animated animate__slideOutDown animate__faster'
-        "
+    <div
+      class="flex flex-col items-center w-screen h-screen p-16 text-center bg-white shadow-2xl md:rounded-modal md:w-auto md:h-auto"
+      :class="
+        animateModalUpDown
+          ? 'animate__animated animate__slideInUp animate__faster'
+          : 'animate__animated animate__slideOutDown animate__faster'
+      "
+    >
+      <icon icon="email-sent" class="w-full h-64 mt-4" />
+      <h2
+        class="mt-10 text-5xl leading-tight md:mt-20 font-heading text-h2-fluid"
       >
-        <icon icon="email-sent" class="w-full mt-4" style="height: 384px;" />
-        <h2 class="mt-20 text-5xl leading-tight font-heading text-h2-fluid">
-          Message delivered to a human
-        </h2>
-        <p class="mt-5 text-xl leading-tight whitespace-no-wrap">
-          One of our team members will respond to you shortly. In the meantime
-          you can check out
-          <a href="#use-cases" class="underline">use cases</a>.
-        </p>
-        <Btn class="mt-5" @click="close">
-          Awesome!
-        </Btn>
-      </div>
+        Message delivered to a human
+      </h2>
+      <p class="mt-5 text-xl leading-tight md:whitespace-no-wrap">
+        One of our team members will respond to you shortly.
+      </p>
+      <Btn class="mt-5" @click="close">
+        Awesome!
+      </Btn>
     </div>
   </div>
 </template>

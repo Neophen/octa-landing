@@ -84,7 +84,7 @@ export default {
       full_name: "",
       message: "",
       lastName: "",
-      showSuccess: true,
+      showSuccess: false,
       submitText: computed(() => (state.isLoading ? "Sending..." : "Send")),
     });
 
