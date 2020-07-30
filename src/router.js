@@ -49,7 +49,7 @@ const routes = [
     path: "/tools",
     component: Tools,
     props: {
-      links: mainLinks
+      links: []
     }
   },
 ];

@@ -1,60 +1,95 @@
 <template>
-  <!-- <SubpageHeader />
+  <OctaHeader :links="links" :logo-link="logoLink" />
   <MobileHeader />
   <div class="px-4">
-    <div class="container px-4 mb-4">
-      <AdvancedToolkit />
-      <PageEditor />
-      <Editions />
-      <ToolsForFilm />
-      <Archive />
-      <ProgramManager />
-      <OffSeason />
-      <PostStreams />
-      <Sponsors />
-      <Users />
-      <TagLibrary />
-      <ContactUs />
+    <div class="container mb-4">
+      <AdvancedToolkit
+        class="mt-44"
+        :links="components"
+        style="scroll-margin: 150px 0 0 0;"
+      />
+
+      <component
+        v-for="(link, i) in components"
+        :key="link.url"
+        :is="link.component"
+        :link="link"
+        :index="i"
+        class="mt-44"
+        style="scroll-margin: 150px 0 0 0;"
+      />
+
+      <ContactUs class="mt-44" style="scroll-margin: 150px 0 0 0;" />
+      <OctaFooter class="mt-64" />
     </div>
   </div>
-  <OctaFooter class="px-4 mt-64" /> -->
 </template>
 
 <script>
-// import AdvancedToolkit from "./tools_subpage_components/AdvancedToolkit.vue";
-// import OctaFooter from "./OctaFooter.vue";
-// import ContactUs from "./ContactUs.vue";
-// import MobileHeader from "./MobileHeader.vue";
-// import SubpageHeader from "./SubpageHeader.vue";
-// import PageEditor from "./tools_subpage_components/PageEditor.vue";
-// import Editions from "./tools_subpage_components/Editions.vue";
-// import ToolsForFilm from "./tools_subpage_components/ToolsForFilm.vue";
-// import Archive from "./tools_subpage_components/Archive.vue";
-// import ProgramManager from "./tools_subpage_components/ProgramManager.vue";
-// import OffSeason from "./tools_subpage_components/OffSeason.vue";
-// import PostStreams from "./tools_subpage_components/PostStreams.vue";
-// import Sponsors from "./tools_subpage_components/Sponsors.vue";
-// import Users from "./tools_subpage_components/Users.vue";
-// import TagLibrary from "./tools_subpage_components/TagLibrary.vue";
+import OctaFooter from "../components/page/OctaFooter.vue";
+import OctaHeader from "../components/page/OctaHeader.vue";
+import MobileHeader from "../components/page/MobileHeader.vue";
 
 export default {
-  name: "ToolsSubpage",
+  name: "Tools",
   components: {
-    // AdvancedToolkit,
-    // OctaFooter,
-    // ContactUs,
-    // MobileHeader,
-    // SubpageHeader,
-    // PageEditor,
-    // Editions,
-    // ToolsForFilm,
-    // Archive,
-    // ProgramManager,
-    // OffSeason,
-    // PostStreams,
-    // Sponsors,
-    // Users,
-    // TagLibrary,
+    OctaFooter,
+    OctaHeader,
+    MobileHeader,
   },
+  props: {
+    logoLink: {
+      type: String,
+      default: "/",
+    },
+    links: {
+      type: Array,
+      default: () => [],
+    },
+  },
+  data: () => ({
+    components: [
+      {
+        url: "#page-editor",
+        title: "Page editor",
+        component: "page-editor",
+      },
+      {
+        url: "#editions",
+        title: "Editions & archive manager",
+        component: "editions",
+      },
+      {
+        url: "#program-manager",
+        title: "Competitive program manager",
+        component: "program-manager",
+      },
+      {
+        url: "#off-season",
+        title: "Off-season tools",
+        component: "off-season",
+      },
+      {
+        url: "#post-streams",
+        title: "Posts streams",
+        component: "post-streams",
+      },
+      {
+        url: "#sponsors",
+        title: "Sponsors",
+        component: "sponsors",
+      },
+      {
+        url: "#users",
+        title: "Users",
+        component: "users",
+      },
+      {
+        url: "#tag-library",
+        title: "Tag library",
+        component: "tag-library",
+      },
+    ],
+  }),
 };
 </script>

@@ -6,3 +6,9 @@ export { default as YourOctafest } from "./YourOctafest";
 export { default as YourSuccess } from "./YourSuccess";
 export { default as Integrations } from "./Integrations";
 export { default as ContactUs } from "./ContactUs";
+
+// TODO cleanup
+export { default as AdvancedToolkit } from "./AdvancedToolkit";
+export { default as PageEditor } from "./PageEditor";
+export { default as Editions } from "./Editions";
+export { default as ToolsForFilm } from "./ToolsForFilm";

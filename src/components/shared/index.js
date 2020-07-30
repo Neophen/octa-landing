@@ -7,5 +7,7 @@ export { default as Oh2 } from "./Oh2.vue";
 export { default as Oh3 } from "./Oh3.vue";
 export { default as Omark } from "./Omark.vue";
 export { default as Op } from "./Op.vue";
+export { default as Oph } from "./Oph.vue";
 export { default as Blob } from "./Blob.vue";
 export { default as TextIllustration } from "./TextIllustration.vue";
+export { default as OctaVideo } from "./OctaVideo.vue";
