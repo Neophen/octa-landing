@@ -6,7 +6,7 @@
           v-if="img"
           :src="imgSrc"
           class="w-full"
-          :class="{ 'rounded-large object-cover': rounded, 'h-auto': !rounded }"
+          :class="{ 'rounded-large object-cover shadow-video': rounded, 'h-auto': !rounded }"
         />
       </slot>
       <blob v-if="blobs" icon="rounded-blue" position="-282:0:64:78" right />
