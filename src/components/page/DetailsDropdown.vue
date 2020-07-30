@@ -47,30 +47,34 @@
               >{{ link.title }}</a
             >
           </div>
-          <div v-if="link.icons" class="flex mt-8 ml-5 whitespace-no-wrap">
+          <div v-if="link.icons" class="flex items-center mt-8 ml-5 space-x-3">
             <a
               href="https://www.linkedin.com/company/octafest"
               target="_blank"
-              class="mr-3"
+              class="text-black hover:text-primary-500"
             >
-              <img src="/central/linkedin_sidenav.svg" alt="linkedin" />
+              <icon icon="ico_social_linkedin" class="w-10 h-10" />
             </a>
             <a
               href="https://www.facebook.com/octafestplatform"
               target="_blank"
-              class="mr-3"
+              class="text-black hover:text-primary-500"
             >
-              <img src="/central/facebook_sidenav.svg" alt="facebook" />
+              <icon icon="ico_social_facebook" class="w-10 h-10" />
             </a>
             <a
               href="https://www.instagram.com/octafest"
               target="_blank"
-              class="mr-3"
+              class="text-black hover:text-primary-500"
             >
-              <img src="/central/instagram_sidenav.svg" alt="instagram" />
+              <icon icon="ico_social_instagram" class="w-10 h-10" />
             </a>
-            <a href="https://twitter.com/Octafest1" target="_blank">
-              <img src="/central/twitter_sidenav.svg" alt="twitter" />
+            <a
+              href="https://twitter.com/Octafest1"
+              target="_blank"
+              class="text-black hover:text-primary-500"
+            >
+              <icon icon="ico_social_twitter" class="w-10 h-10" />
             </a>
           </div>
         </div>
