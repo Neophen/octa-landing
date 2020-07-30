@@ -32,6 +32,7 @@ module.exports = {
       spacing: {
         '7': '1.75rem',
         '13': '3.125rem',
+        'nav': '72px',
         '44': '11.25rem',
       },
       colors: {

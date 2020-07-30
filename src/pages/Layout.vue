@@ -1,7 +1,7 @@
 <template>
   <OctaHeader :links="links" :logo-link="logoLink" />
+  <MobileHeader />
   <div class="w-screen overflow-x-hidden">
-    <MobileHeader />
     <div class="px-4">
       <div class="container mb-4">
         <component
