@@ -12,3 +12,4 @@ export { default as Editions } from "./Editions";
 export { default as ProgramManager } from "./ProgramManager";
 export { default as OffSeason } from "./OffSeason";
 export { default as PostStreams } from "./PostStreams";
+export { default as Sponsors } from "./Sponsors";

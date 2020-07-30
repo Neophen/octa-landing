@@ -35,7 +35,7 @@
       </div>
     </button>
     <p class="mt-3 text-sm text-center">
-      Click on image to open in full screen
+      Click on video view full screen
     </p>
     <VideoModal v-if="showModal" @close="showModal = false" :video="video" />
   </div>
