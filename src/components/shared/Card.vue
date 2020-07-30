@@ -2,7 +2,7 @@
   <component
     :is="cardWrapper"
     :href="url"
-    class="cursor-pointer p-7 group bg-cream-500 hover:bg-white hover:shadow-card rounded-large"
+    class="flex flex-col cursor-pointer p-7 group bg-cream-500 hover:bg-white hover:shadow-card rounded-large"
   >
     <icon :icon="item.icon" class="w-13 h-13" />
     <oh3 class="mt-3">
@@ -11,7 +11,7 @@
     <op class="mt-3 text-grey-500 group-hover:text-black">
       {{ item.description }}
     </op>
-    <div v-if="url" class="flex items-center mt-3 space-x-2">
+    <div v-if="url" class="flex items-center mt-auto space-x-2">
       <op class="text-grey-500 group-hover:text-black">
         {{ item.link.label }}
       </op>

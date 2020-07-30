@@ -28,6 +28,10 @@ export default {
         title: "Intuitive management tools",
         description:
           "Collaborate with your team, add films, events, guests, competitions, schedule & other elements of your edition.",
+        link: {
+          label: "Learn more",
+          url: "/tools",
+        },
       },
       {
         id: "sub-reliable-website",
@@ -35,6 +39,10 @@ export default {
         title: "Modern & reliable website",
         description:
           "Designed for the best film festival experience & integrated with management tools for automtation.",
+        link: {
+          label: "Learn more",
+          url: "#look",
+        },
       },
       {
         id: "sub-support",
@@ -42,6 +50,10 @@ export default {
         title: "Technical & design support",
         description:
           "We take care of the servers, content delivery networks, and certificates. Your team gets the latest tools to work with.",
+        link: {
+          label: "Learn more",
+          url: "#support",
+        },
       },
     ];
 
