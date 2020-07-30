@@ -2,7 +2,12 @@
   <div :id="id" class="md:flex md:flex-row-reverse">
     <div class="relative flex-1 mb-12 md:mb-0 md:ml-24">
       <slot name="image">
-        <img v-if="img" :src="imgSrc" class="w-full h-auto" />
+        <img
+          v-if="img"
+          :src="imgSrc"
+          class="w-full"
+          :class="{ 'rounded-large object-cover': rounded, 'h-auto': !rounded }"
+        />
       </slot>
       <blob v-if="blobs" icon="rounded-blue" position="-282:0:64:78" right />
       <blob v-if="blobs" icon="u-cream" position="-124:463:51:42" right />
@@ -41,6 +46,10 @@ export default {
       required: false,
     },
     blobs: {
+      type: Boolean,
+      default: false,
+    },
+    rounded: {
       type: Boolean,
       default: false,
     },
