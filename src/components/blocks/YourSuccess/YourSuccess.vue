@@ -88,7 +88,7 @@ export default {
       title: "More on support",
       link: {
         label: "Read more",
-        url: "#book-a-demo",
+        url: "/tools",
       },
     },
   }),
