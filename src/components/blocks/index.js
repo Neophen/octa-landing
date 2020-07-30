@@ -14,3 +14,4 @@ export { default as OffSeason } from "./OffSeason";
 export { default as PostStreams } from "./PostStreams";
 export { default as Sponsors } from "./Sponsors";
 export { default as Users } from "./Users";
+export { default as TagLibrary } from "./TagLibrary";
