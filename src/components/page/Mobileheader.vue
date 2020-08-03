@@ -2,7 +2,7 @@
   <div
     class="py-3 md:hidden"
     :class="{
-      'top-0 fixed inset-y-0 h-nav w-screen bg-white z-10 shadow-md': shoulStick,
+      'top-0 fixed inset-y-0 h-nav w-full bg-white z-10 shadow-md': shoulStick,
       block: !shoulStick,
     }"
   >
