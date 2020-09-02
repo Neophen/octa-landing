@@ -10,7 +10,7 @@
           class="text-4xl font-bold leading-tight text-gray-600 font-heading"
           style="text-size-adjust: none;"
         >
-          Book a demo
+          {{ title }}
         </h2>
         <form class="mt-5 space-y-5" @submit.prevent="onSubmit">
           <label class="block">
@@ -70,6 +70,12 @@ import MailSent from "./MailSent.vue";
 
 export default {
   name: "ContactUs",
+  props: {
+    title: {
+      type: String,
+      default: "Book a demo",
+    },
+  },
   components: {
     MailSent,
   },
