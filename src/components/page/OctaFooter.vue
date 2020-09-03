@@ -32,10 +32,7 @@
     </div>
     <div class="space-y-3">
       <h3 class="font-bold leading-tight">Community</h3>
-      <a
-        href="/emerging-festival-program"
-        class="block leading-tight hover:underline"
-      >
+      <a href="/emerging" class="block leading-tight hover:underline">
         Emerging festival program
       </a>
       <!-- <a class="leading-tight">Help center</a> -->

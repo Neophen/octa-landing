@@ -54,7 +54,7 @@ const routes = [
     },
   },
   {
-    path: "/emerging-festival-program",
+    path: "/emerging",
     component: Programs,
     props: {
       links: [],
