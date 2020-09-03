@@ -8,32 +8,32 @@ const mainLinks = [
   {
     url: "#the-gist",
     label: "The gist",
-    component: 'TheGist',
+    component: "TheGist",
   },
   {
     url: "#subscription",
     label: "Subscription",
-    component: 'Subscription',
+    component: "Subscription",
   },
   {
     url: "#look",
     label: "Your look",
-    component: 'YourOctafest',
+    component: "YourOctafest",
   },
   {
     url: "#support",
     label: "Your success",
-    component: 'YourSuccess',
+    component: "YourSuccess",
   },
   {
     url: "#integrations",
     label: "Integrations",
-    component: 'Integrations',
+    component: "Integrations",
   },
   {
     url: "#team",
     label: "Team",
-    component: 'Team',
+    component: "Team",
   },
 ];
 
@@ -42,23 +42,23 @@ const routes = [
     path: "/",
     component: Layout,
     props: {
-      logoLink: '#',
-      links: mainLinks
-    }
+      logoLink: "#",
+      links: mainLinks,
+    },
   },
   {
     path: "/tools",
     component: Tools,
     props: {
-      links: []
-    }
+      links: [],
+    },
   },
   {
-    path: "/emerging-festival-programs",
+    path: "/emerging-festival-program",
     component: Programs,
     props: {
-      links: []
-    }
+      links: [],
+    },
   },
 ];
 const router = createRouter({ history, routes });

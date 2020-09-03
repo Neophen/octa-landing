@@ -33,7 +33,7 @@
     <div class="space-y-3">
       <h3 class="font-bold leading-tight">Community</h3>
       <a
-        href="/emerging-festival-programs"
+        href="/emerging-festival-program"
         class="block leading-tight hover:underline"
       >
         Emerging festival program
