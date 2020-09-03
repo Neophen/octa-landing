@@ -18,25 +18,37 @@
       <div class="flex flex-col space-y-3">
         <a
           href="/tools"
-          class="leading-tight"
+          class="block leading-tight hover:underline"
           :class="{ active: isActive(routes.to) }"
         >
           Management tools
         </a>
-        <a class="leading-tight">Website tools</a>
+        <!-- <a class="leading-tight">Website tools</a>
         <a class="leading-tight">Support</a>
         <a class="leading-tight">Pricing</a>
         <a class="leading-tight">Privacy policy</a>
-        <a class="leading-tight">Security</a>
+        <a class="leading-tight">Security</a> -->
       </div>
     </div>
     <div class="space-y-3">
       <h3 class="font-bold leading-tight">Community</h3>
-      <p class="leading-tight">Help center</p>
-      <p class="leading-tight">Discord chat</p>
-      <p class="leading-tight">Live status</p>
-      <p class="leading-tight">Pricing</p>
-      <p class="leading-tight">Feature request</p>
+      <a
+        href="/emerging-festival-programs"
+        class="block leading-tight hover:underline"
+      >
+        Emerging festival program
+      </a>
+      <!-- <a class="leading-tight">Help center</a> -->
+      <a
+        href="https://discord.gg/2D7VHX"
+        target="_blank"
+        class="block leading-tight hover:underline"
+      >
+        Discord chat
+      </a>
+      <!-- <p class="leading-tight">Live status</p> -->
+      <!-- <p class="leading-tight">Pricing</p> -->
+      <!-- <p class="leading-tight">Feature request</p> -->
     </div>
   </div>
   <div class="mt-16 text-center">

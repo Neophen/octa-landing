@@ -1,12 +1,16 @@
 <template>
   <div :id="id" class="w-auto mx-auto">
-    <div class="p-6 mx-auto rounded-large bg-cream-500" style="width: 856px">
+    <div
+      class="p-6 mx-auto rounded-large bg-cream-500"
+      style="max-width: 856px"
+    >
       <div class="flex space-x-4">
         <img
           src="/central/photos/dmitrij.png"
           alt="Dmitrij's photo"
-          width="70"
-          height="70"
+          class="flex-shrink-0 w-20 h-20"
+          width="80"
+          height="80"
         />
         <div class="flex flex-col justify-center space-y-2">
           <h3 class="font-heading">Dmitrij Glusevskij</h3>
@@ -17,11 +21,11 @@
           >
         </div>
       </div>
-      <p class="mt-6 text-3xl italic font-light"
-        >“Octafest saved us a bunch of work-hours on technical things we didn’t
+      <p class="mt-6 text-3xl italic font-light">
+        “Octafest saved us a bunch of work-hours on technical things we didn’t
         really like spending our time on. Like putting together a screening
-        schedule or publishing the program.”</p
-      >
+        schedule or publishing the program.”
+      </p>
     </div>
   </div>
 </template>

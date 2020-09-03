@@ -2,7 +2,7 @@
   <div :id="id" class="p-6 mx-auto">
     <oh2>{{ title }}</oh2>
 
-    <div class="mt-5 space-y-5" style="width: 1200px">
+    <div class="w-full mt-5 space-y-5" style="max-width: 1200px">
       <div class="flex py-2 pl-6 space-x-4 rounded-small bg-cream-500">
         <Icon icon="schedule" class="flex-shrink-0 w-8 h-8" />
         <op
