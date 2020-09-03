@@ -10,16 +10,13 @@
         autoplay
         loop
         muted
+        playsinline
         preload="auto"
         class="w-full h-full"
         :poster="poster"
       >
         <source media="(min-width:650px)" :src="videoLow" type="video/mp4" />
-        <source
-          media="(max-width:649px)"
-          :src="videoLowMobile"
-          type="video/mp4"
-        />
+        <source media="(max-width:649px)" :src="videoLowMobile" type="video/mp4" />
         <p>
           Your browser doesn't support HTML video. Here is a
           <a :href="videoHigh">link to the video</a> instead.
@@ -34,9 +31,7 @@
         </div>
       </div>
     </button>
-    <p class="mt-3 text-sm text-center">
-      Click on video view full screen
-    </p>
+    <p class="mt-3 text-sm text-center">Click on video view full screen</p>
     <VideoModal v-if="showModal" @close="showModal = false" :video="video" />
   </div>
 </template>
