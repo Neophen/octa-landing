@@ -26,6 +26,7 @@ module.exports = {
         '-2': '-2',
       },
       borderRadius: {
+        small: '10px',
         large: '20px',
         modal: '40px',
       },

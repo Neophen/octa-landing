@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Tools from "./pages/Tools.vue";
 import Layout from "./pages/Layout.vue";
+import Programs from "./pages/Programs.vue";
 const history = createWebHistory();
 
 const mainLinks = [
@@ -48,6 +49,13 @@ const routes = [
   {
     path: "/tools",
     component: Tools,
+    props: {
+      links: []
+    }
+  },
+  {
+    path: "/emerging-festival-programs",
+    component: Programs,
     props: {
       links: []
     }
