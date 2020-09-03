@@ -41,7 +41,7 @@ export default {
           "Designed to represent your festival identity. Linked with management tools for automatization of your team workflow.",
         link: {
           label: "Learn more",
-          url: "#look",
+          url: "/#look",
         },
       },
       {
@@ -49,10 +49,10 @@ export default {
         icon: "collaborate",
         title: "Tech & design support",
         description:
-          "We take care of the servers, content delivery networks, and certificates.\nYour team gets the latest tools to work with.",
+          "We take care of the servers, content delivery networks, and certificates. Your team gets the latest tools to work with.",
         link: {
           label: "Learn more",
-          url: "#support",
+          url: "/#support",
         },
       },
     ];

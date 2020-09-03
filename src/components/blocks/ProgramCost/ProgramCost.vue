@@ -1,8 +1,8 @@
 <template>
   <div :id="id" class="p-6 mx-auto">
     <oh2>{{ title }}</oh2>
-    <div class="flex mt-6 space-x-10">
-      <div style="width: 580px;">
+    <div class="flex flex-wrap mt-6 space-y-10 md:space-y-0 md:space-x-10">
+      <div class="w-full md:flex-1">
         <oh3>Transparent yearly subscription fee:</oh3>
         <op class="mt-2">1st year: 599 EUR</op>
         <op>2nd year: 699 EUR</op>
@@ -14,7 +14,7 @@
           charges.</op
         >
       </div>
-      <div style="width: 580px;">
+      <div class="w-full md:flex-1">
         <oh3>What happens after 5th year?</oh3>
         <op class="mt-2"
           >After your festival has reached it’s 5th year, we will evaluate your

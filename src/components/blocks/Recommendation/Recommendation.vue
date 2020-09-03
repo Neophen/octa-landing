@@ -16,8 +16,8 @@
           <h3 class="font-heading">Dmitrij Glusevskij</h3>
           <op
             >Co-founder &amp; Programmer
-            <a href="https://pirmojibanga.lt" target="_blank">@Pirmoji Banga</a>
-            Film Festival</op
+            <a href="https://pirmojibanga.lt" target="_blank" class="hover:underline">@Pirmoji Banga
+            Film Festival</a></op
           >
         </div>
       </div>
