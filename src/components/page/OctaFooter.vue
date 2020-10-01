@@ -37,7 +37,7 @@
       </a>
       <!-- <a class="leading-tight">Help center</a> -->
       <a
-        href="https://discord.gg/2D7VHX"
+        href="https://discord.gg/ne6rT6J"
         target="_blank"
         class="block leading-tight hover:underline"
       >
