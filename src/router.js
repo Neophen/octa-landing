@@ -11,6 +11,11 @@ const mainLinks = [
     component: "TheGist",
   },
   {
+    url: "#time-and-resources",
+    label: "Time & resources",
+    component: "TimeAndResources",
+  },
+  {
     url: "#subscription",
     label: "Subscription",
     component: "Subscription",

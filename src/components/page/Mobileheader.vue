@@ -1,20 +1,20 @@
 <template>
   <div
-    class="py-3 md:hidden"
+    class="py-3 lg:hidden"
     :class="{
-      'top-0 fixed inset-y-0 h-nav w-full bg-white z-10 shadow-md': shoulStick,
-      block: !shoulStick,
+      'top-0 fixed flex items-center inset-y-0 h-nav w-full bg-white z-10 shadow-md': shouldStick,
+      block: !shouldStick,
     }"
   >
-    <div class="px-4">
+    <div class="w-full px-4">
       <nav class="container flex items-center w-full m-auto">
         <div class="flex-1">
           <a
             href="/"
             class="flex items-center phone_navbar_logo"
-            style="width: 109px;"
+            style="width: 109px"
           >
-            <icon icon="site-logo" style="height: 30px; width: 109px;" />
+            <icon icon="site-logo" style="height: 30px; width: 109px" />
           </a>
         </div>
         <button type="button" @click="openNav">
@@ -61,14 +61,14 @@ export default {
     SideNav,
   },
   setup() {
-    const shoulStick = ref(false);
+    const shouldStick = ref(false);
     const showNav = ref(false);
 
     const updateSticky = (e) => {
       if (window.scrollY > 0) {
-        shoulStick.value = true;
+        shouldStick.value = true;
       } else {
-        shoulStick.value = false;
+        shouldStick.value = false;
       }
     };
 
@@ -85,7 +85,7 @@ export default {
     });
 
     return {
-      shoulStick,
+      shouldStick,
       showNav,
       openNav,
     };

@@ -1,7 +1,7 @@
 <template>
   <div
     id="nav"
-    class="items-center hidden py-3 md:block"
+    class="items-center hidden py-3 lg:block"
     :class="{
       'top-0 fixed inset-y-0 h-nav w-full bg-white z-10 shadow-md': shoulStick,
     }"
@@ -9,8 +9,8 @@
     <div class="px-4">
       <nav class="container flex items-center w-full mx-auto">
         <a :href="logoLink" class="flex items-center">
-          <icon icon="site-logo" style="height: 42px; width: 135px;" />
-          <icon icon="spacer" class="ml-3" style="height: 20px; width: 2px;" />
+          <icon icon="site-logo" style="height: 42px; width: 135px" />
+          <icon icon="spacer" class="ml-3" style="height: 20px; width: 2px" />
         </a>
         <div class="flex items-center flex-1 space-x-3">
           <div
@@ -28,7 +28,7 @@
         </div>
         <a
           class="block w-auto py-3 font-bold text-center text-white rounded-full cursor-pointer md:inline-block bg-primary-500 text-title hover:bg-primary-400 active:bg-primary-600 focus:outline-none focus:shadow-outline"
-          style="width: 180px;"
+          style="width: 180px"
           href="#book-a-demo"
           >Book a demo</a
         >

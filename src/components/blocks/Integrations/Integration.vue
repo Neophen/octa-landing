@@ -3,10 +3,15 @@
     <a
       :href="item.link"
       target="_blank"
-      class="flex items-center justify-center w-32 h-32 bg-white rounded-full shadow"
+      class="flex items-center justify-center p-5 bg-white rounded-full shadow"
     >
-      <icon v-if="icon" class="w-20 h-20" :icon="item.icon" pack="integrations" />
-      <img v-else class="w-20 h-20" :src="imgSrc" />
+      <icon
+        v-if="icon"
+        class="w-16 h-16 xs:w-20 xs:h-20"
+        :icon="item.icon"
+        pack="integrations"
+      />
+      <img v-else class="w-16 h-16 xs:w-20 xs:h-20" :src="imgSrc" />
     </a>
     <p>{{ item.title }}</p>
   </div>
@@ -23,12 +28,12 @@ export default {
     icon: {
       type: Boolean,
       default: true,
-    }
+    },
   },
   computed: {
     imgSrc() {
       return this.icon ? null : `/central/icons/integrations/${this.item.icon}`;
-    }
+    },
   },
 };
 </script>

@@ -14,7 +14,7 @@
 
     <div
       class="flex flex-col flex-wrap mx-auto mt-24 md:flex-row"
-      style="max-width: 998px;"
+      style="max-width: 998px"
     >
       <div class="flex-1">
         <h3 class="text-2xl font-heading">Can't find your favourite tools?</h3>

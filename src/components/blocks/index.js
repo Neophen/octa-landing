@@ -1,5 +1,6 @@
 export { default as Team } from "./Team";
 export { default as TheGist } from "./TheGist";
+export { default as TimeAndResources } from "./TimeAndResources";
 export { default as Subscription } from "./Subscription";
 export { default as YourOctafest } from "./YourOctafest";
 export { default as YourSuccess } from "./YourSuccess";
@@ -11,7 +12,7 @@ export { default as Editions } from "./Editions";
 export { default as ProgramManager } from "./ProgramManager";
 export { default as OffSeason } from "./OffSeason";
 export { default as PostStreams } from "./PostStreams";
-export { default as Sponsors } from "./Sponsors";
+// export { default as Sponsors } from "./Sponsors";
 export { default as Users } from "./Users";
 export { default as TagLibrary } from "./TagLibrary";
 export { default as EmergingProgram } from "./EmergingProgram";
