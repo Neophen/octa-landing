@@ -64,7 +64,9 @@
               >
               IFF
             </p>
-            <Icon icon="scanorama" class="w-24 h-8 mx-auto mt-3" />
+            <a href="https://scanorama.lt" target="_blank">
+              <Icon icon="scanorama" class="w-24 h-8 mx-auto mt-3" />
+            </a>
           </div>
         </div>
       </div>

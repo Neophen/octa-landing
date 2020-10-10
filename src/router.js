@@ -1,7 +1,9 @@
-import { createWebHistory, createRouter } from "vue-router";
-import Tools from "./pages/Tools.vue";
+import { createRouter, createWebHistory } from "vue-router";
+
 import Layout from "./pages/Layout.vue";
 import Programs from "./pages/Programs.vue";
+import Tools from "./pages/Tools.vue";
+
 const history = createWebHistory();
 
 const mainLinks = [
@@ -11,8 +13,8 @@ const mainLinks = [
     component: "TheGist",
   },
   {
-    url: "#time-and-resources",
-    label: "Time & resources",
+    url: "#benefits",
+    label: "Benefits",
     component: "TimeAndResources",
   },
   {
@@ -22,12 +24,12 @@ const mainLinks = [
   },
   {
     url: "#look",
-    label: "Your look",
+    label: "Website",
     component: "YourOctafest",
   },
   {
     url: "#support",
-    label: "Your success",
+    label: "Support",
     component: "YourSuccess",
   },
   {

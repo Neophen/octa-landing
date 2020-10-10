@@ -1,9 +1,7 @@
 <template>
   <div>
     <omark>Option 1</omark>
-    <oh2 class="mt-5">
-      Create a distinct look using the octafest theme
-    </oh2>
+    <oh2 class="mt-5">Create a distinct look using the Octafest theme</oh2>
     <GridList class="mt-10">
       <Card v-for="item in cards" :key="item.id" :item="item" />
       <MoreCard :item="demo" />
