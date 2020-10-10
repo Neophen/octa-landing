@@ -17,12 +17,6 @@
   --var-teal-shadow: linear-gradient(90deg, #faebe2 84.18%, #fdf5f2 100%);
 }
 
-.container {
-  max-width: 75rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -30,9 +24,16 @@ html {
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background: var(--var-gray-100);
   font-family: "Source Sans Pro", sans-serif;
   color: var(--var-gray-500);
+}
+
+.container {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @variants group-hover {
@@ -40,7 +41,7 @@ body {
     background: linear-gradient(90deg, #faebe2 84.18%, #fdf5f2 100%);
   }
   .bg-blue-fade-90 {
-    background: linear-gradient(90deg, #A6F3F9 84.18%, #C9FAFE 100%);
+    background: linear-gradient(90deg, #a6f3f9 84.18%, #c9fafe 100%);
   }
 }
 
