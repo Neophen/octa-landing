@@ -56,6 +56,7 @@ module.exports = {
         "blue-300": "#C9FAFE",
         "grey-500": "var(--var-grey-500)",
         "teal-shadow": "var(--teal-shadow)",
+        "black-400": "#202023",
       },
       backgroundColor: (theme) => ({
         ...theme("colors"),

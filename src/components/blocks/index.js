@@ -20,3 +20,5 @@ export { default as ProgramSubscription } from "./ProgramSubscription";
 export { default as Recommendation } from "./Recommendation";
 export { default as ProgramCost } from "./ProgramCost";
 export { default as HowToBegin } from "./HowToBegin";
+export { default as BoardMessage } from "./BoardMessage";
+export { default as BoardMembers } from "./BoardMembers";

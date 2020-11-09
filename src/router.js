@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Layout from "./pages/Layout.vue";
 import Programs from "./pages/Programs.vue";
 import Tools from "./pages/Tools.vue";
+import AdvisoryBoard from "./pages/AdvisoryBoard.vue";
 
 const history = createWebHistory();
 
@@ -63,6 +64,13 @@ const routes = [
   {
     path: "/emerging",
     component: Programs,
+    props: {
+      links: [],
+    },
+  },
+  {
+    path: "/advisory-board",
+    component: AdvisoryBoard,
     props: {
       links: [],
     },

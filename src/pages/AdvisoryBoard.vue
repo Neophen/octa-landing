@@ -5,15 +5,20 @@
     <div class="px-4">
       <div class="container mb-4">
         <component
-          v-for="link in links"
+          v-for="(link, i) in components"
           :key="link.url"
           :is="link.component"
           :link="link"
+          :index="i"
           class="mt-44"
           style="scroll-margin: 150px 0 0 0"
         />
 
-        <ContactUs class="mt-44" style="scroll-margin: 150px 0 0 0" />
+        <ContactUs
+          class="mt-44"
+          style="scroll-margin: 150px 0 0 0"
+          title="Let's talk:"
+        />
         <OctaFooter class="mt-64" />
       </div>
     </div>
@@ -26,7 +31,7 @@ import OctaHeader from "../components/page/OctaHeader.vue";
 import MobileHeader from "../components/page/MobileHeader.vue";
 
 export default {
-  name: "MainPage",
+  name: "AdvisoryBoard",
   components: {
     OctaFooter,
     OctaHeader,
@@ -41,6 +46,22 @@ export default {
       type: Array,
       default: () => [],
     },
+  },
+  setup() {
+    const components = [
+      {
+        url: "#BoardMessage",
+        title: "Active board message",
+        component: "BoardMessage",
+      },
+      {
+        url: "#BoardMembers",
+        title: "Active board members:",
+        component: "BoardMembers",
+      },
+    ];
+
+    return { components };
   },
 };
 </script>

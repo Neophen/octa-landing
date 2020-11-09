@@ -1,6 +1,7 @@
 export { default as Btn } from "./Btn.vue";
 export { default as Icon } from "./Icon.vue";
 export { default as Card } from "./Card.vue";
+export { default as MemberCard } from "./MemberCard.vue";
 export { default as MoreCard } from "./MoreCard.vue";
 export { default as GridList } from "./GridList.vue";
 export { default as Oh2 } from "./Oh2.vue";

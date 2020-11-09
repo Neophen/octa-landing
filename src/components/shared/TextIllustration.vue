@@ -6,13 +6,16 @@
           v-if="img"
           :src="imgSrc"
           class="w-full"
-          :class="{ 'rounded-large object-cover shadow-video': rounded, 'h-auto': !rounded }"
+          :class="{
+            'rounded-large object-cover shadow-video': rounded,
+            'h-auto': !rounded,
+          }"
         />
       </slot>
-      <blob v-if="blobs" icon="rounded-blue" position="-282:0:64:78" right />
-      <blob v-if="blobs" icon="u-cream" position="-124:463:51:42" right />
+      <Blob v-if="blobs" icon="rounded-blue" position="-282:0:64:78" right />
+      <Blob v-if="blobs" icon="u-cream" position="-124:463:51:42" right />
     </div>
-    <div class="relative flex-shrink-0" style="max-width: 490px;">
+    <div class="relative flex-shrink-0" style="max-width: 490px">
       <omark v-if="mark" class="mb-6">{{ mark }}</omark>
       <oh2>
         {{ title }}
@@ -20,8 +23,8 @@
       <div class="mt-6">
         <slot />
       </div>
-      <blob v-if="blobs" icon="u-blue" position="-283:-45:31:31" />
-      <blob v-if="blobs" icon="rounded-cream" position="-121:331:59:52" />
+      <Blob v-if="blobs" icon="u-blue" position="-283:-45:31:31" />
+      <Blob v-if="blobs" icon="rounded-cream" position="-121:331:59:52" />
     </div>
   </div>
 </template>
