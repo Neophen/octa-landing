@@ -10,10 +10,14 @@
           :is="link.component"
           :link="link"
           class="mt-44"
-          style="scroll-margin: 150px 0 0 0;"
+          style="scroll-margin: 150px 0 0 0"
         />
 
-        <ContactUs class="mt-44" title="Schedule a call" style="scroll-margin: 150px 0 0 0;" />
+        <ContactUs
+          class="mt-44"
+          title="Schedule a call"
+          style="scroll-margin: 150px 0 0 0"
+        />
         <OctaFooter class="mt-64" />
       </div>
     </div>
@@ -69,7 +73,7 @@ export default {
         title: "HowToBegin",
         component: "HowToBegin",
       },
-    ]
+    ];
 
     return { components };
   },

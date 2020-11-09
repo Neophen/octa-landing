@@ -7,7 +7,7 @@
         <AdvancedToolkit
           class="mt-44"
           :links="components"
-          style="scroll-margin: 150px 0 0 0;"
+          style="scroll-margin: 150px 0 0 0"
         />
 
         <component
@@ -17,10 +17,10 @@
           :link="link"
           :index="i"
           class="mt-44"
-          style="scroll-margin: 150px 0 0 0;"
+          style="scroll-margin: 150px 0 0 0"
         />
 
-        <ContactUs class="mt-44" style="scroll-margin: 150px 0 0 0;" />
+        <ContactUs class="mt-44" style="scroll-margin: 150px 0 0 0" />
         <OctaFooter class="mt-64" />
       </div>
     </div>
