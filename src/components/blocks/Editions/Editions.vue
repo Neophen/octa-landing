@@ -16,26 +16,26 @@
       </div>
     </TextIllustration>
     <div class="mt-20">
-      <oh2>
-        Tools for film festivals of any size
-      </oh2>
+      <oh2> Tools for film festivals of any size </oh2>
       <GridList class="mt-10">
         <Card v-for="item in cards" :key="item.id" :item="item" />
       </GridList>
     </div>
-    <TextIllustration title="Archive made easy" img="octafest-archive.svg" class="mt-20" >
+    <TextIllustration
+      title="Archive made easy"
+      img="octafest-archive.svg"
+      class="mt-20"
+    >
       <div>
-        <oph class="mt-6">
-          Import your history
-        </oph>
+        <oph class="mt-6"> Import your history </oph>
         <op class="mt-2">
-          Your previous editions is an important asset. So we can help you import your story into Octafest.
+          Your previous editions is an important asset. So we can help you
+          import your story into Octafest.
         </op>
-        <oph class="mt-6">
-          Change anything, anytime
-        </oph>
+        <oph class="mt-6"> Change anything, anytime </oph>
         <op class="mt-2">
-          Archive uses the same tools as your edition manager. So you can go back and update anything if you need to.
+          Archive uses the same tools as your edition manager. So you can go
+          back and update anything if you need to.
         </op>
       </div>
     </TextIllustration>
