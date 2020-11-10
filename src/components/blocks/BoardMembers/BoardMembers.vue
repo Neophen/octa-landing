@@ -6,6 +6,7 @@
     <oh2>{{ link.title }}</oh2>
     <GridList width="279px" class="mt-10">
       <MemberCard v-for="item in cards" :key="item.id" :item="item" />
+      <JoinCard :item="joinCard" />
     </GridList>
   </div>
 </template>
@@ -28,10 +29,8 @@ export default {
         alt: "Dmitrij's photo",
         title: "Dmitrij Gluscevskij",
         description: "Festival Programmer",
-        footer: {
-          icon: "scanorama",
-          url: "https://scanorama.lt",
-        },
+        icon: "scanorama",
+        icon_url: "https://scanorama.lt",
       },
       {
         id: "Edvinas",
@@ -39,18 +38,25 @@ export default {
         alt: "Edvinas's photo",
         title: "Edvinas Pukšta",
         description: "Festival Programmer",
-        footer: {
-          icon: "poff",
-          url: "https://poff.ee",
-        },
+        icon: "poff",
+        icon_url: "https://poff.ee",
       },
     ];
+
+    const joinCard = {
+      id: "#JoinBoard",
+      icon: "join-board.svg",
+      title: "Join our board",
+      contact_link: "Hop on call",
+      contact_block: "#book-a-demo",
+      description: "with us to see if our vision aligns",
+    };
 
     const state = reactive({
       id: props.link.url.replace("#", ""),
     });
 
-    return { cards, ...toRefs(state) };
+    return { cards, joinCard, ...toRefs(state) };
   },
 };
 </script>

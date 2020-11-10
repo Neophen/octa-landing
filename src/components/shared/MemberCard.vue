@@ -18,12 +18,12 @@
     <op class="mt-3 text-black-400 group-hover:text-black">
       {{ item.description }}
     </op>
-    <div v-if="item.footer" class="mt-3">
-      <a :href="item.footer.url">
+    <div class="mt-3">
+      <a :href="item.icon_url" target="blank_">
         <Icon
           class="text-grey-500 group-hover:text-black"
           style="width: 115px; height: 40px"
-          :icon="item.footer.icon"
+          :icon="item.icon"
         />
       </a>
     </div>

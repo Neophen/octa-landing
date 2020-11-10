@@ -4,7 +4,7 @@
     :href="url"
     class="flex flex-col cursor-pointer p-7 group bg-cream-500 hover:bg-white hover:shadow-card rounded-large"
   >
-    <icon :icon="item.icon" class="w-13 h-13" />
+    <Icon :icon="item.icon" class="w-13 h-13" />
     <oh3 class="mt-3">
       {{ item.title }}
     </oh3>
@@ -15,7 +15,7 @@
       <op class="text-grey-500 group-hover:text-black">
         {{ item.link.label }}
       </op>
-      <icon
+      <Icon
         icon="link-circle"
         class="w-6 h-6 text-grey-500 group-hover:text-black"
       />
