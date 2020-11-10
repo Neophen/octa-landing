@@ -35,6 +35,9 @@
       <a href="/emerging" class="block leading-tight hover:underline">
         Emerging festival program
       </a>
+      <a href="/advisory-board" class="block leading-tight hover:underline">
+        Advisory board
+      </a>
       <!-- <a class="leading-tight">Help center</a> -->
       <a
         href="https://discord.gg/ne6rT6J"
