@@ -1,27 +1,28 @@
 <template>
   <div id="book-a-demo">
-    <div class="grid grid-cols-1 gap-24 mx-auto md:grid-cols-2">
+    <div class="grid grid-cols-1 gap-10 mx-auto md:grid-cols-2">
       <img
         src="/central/contact-us.svg"
-        class="w-full h-auto md:-mx-12 md:-mt-2"
+        class="md:my-auto"
+        style="width: 672px; max-height: 490px"
       />
-      <div style="width: 490px">
+      <div class="space-y-5" style="max-width: 490px">
         <h2
           class="text-4xl font-bold leading-tight text-gray-600 font-heading"
           style="text-size-adjust: none"
         >
           {{ title }}
         </h2>
-        <op class="mt-5"
+        <op
           >Join our
-          <a href="https://discord.gg/ne6rT6J" class="underline"
+          <a href="https://discord.gg/ne6rT6J" target="blank_" class="underline"
             >community chat💖</a
           >
           where film festival organizers share their experiences. Octafest team
           members will answer your questions and share demo access.<br /><br />Alternatively,
           you can send us an email:</op
         >
-        <form class="mt-5 space-y-5" @submit.prevent="onSubmit">
+        <form @submit.prevent="onSubmit">
           <label class="block">
             <span class="mb-2 ml-3 text-sm text-gray-500 font-text"
               >Full name</span
@@ -32,7 +33,7 @@
               type="text"
               placeholder="Your name..."
               required
-              class="block w-1/2 px-4 py-2 mt-1 border border-gray-400 shadow-none rounded-large form-input"
+              class="block w-full px-4 py-2 mt-1 border border-gray-400 shadow-none md:w-1/2 rounded-large form-input"
             />
           </label>
           <label class="block">
@@ -43,7 +44,7 @@
               type="email"
               name="email"
               v-model="email"
-              class="block w-1/2 px-4 py-2 mt-1 border border-gray-400 shadow-none rounded-large form-input"
+              class="block w-full px-4 py-2 mt-1 border border-gray-400 shadow-none md:w-1/2 rounded-large form-input"
               placeholder="Your email address..."
               required
             />
