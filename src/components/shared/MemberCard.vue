@@ -2,7 +2,7 @@
   <component
     :is="cardWrapper"
     :href="url"
-    class="flex flex-col items-center cursor-pointer p-7 group bg-cream-500 hover:bg-white hover:shadow-card rounded-large"
+    class="flex flex-col items-center p-7 bg-cream-500 rounded-large"
   >
     <img
       :src="item.img"
@@ -15,13 +15,13 @@
       {{ item.title }}
     </oh3>
     <div class="mt-3 border-t border-black" style="width: 39px"></div>
-    <op class="mt-3 text-black-400 group-hover:text-black">
+    <op class="mt-3 text-black-400">
       {{ item.description }}
     </op>
     <div class="mt-3">
       <a :href="item.icon_url" target="blank_">
         <Icon
-          class="text-grey-500 group-hover:text-black"
+          class="text-grey-500"
           style="width: 115px; height: 40px"
           :icon="item.icon"
         />
