@@ -32,15 +32,15 @@ export default {
         icon: "scanorama",
         icon_url: "https://scanorama.lt",
       },
-      {
-        id: "Edvinas",
-        img: "/central/photos/edvinas.png",
-        alt: "Edvinas's photo",
-        title: "Edvinas Pukšta",
-        description: "Festival Programmer",
-        icon: "poff",
-        icon_url: "https://poff.ee",
-      },
+    //   {
+    //     id: "Edvinas",
+    //     img: "/central/photos/edvinas.png",
+    //     alt: "Edvinas's photo",
+    //     title: "Edvinas Pukšta",
+    //     description: "Festival Programmer",
+    //     icon: "poff",
+    //     icon_url: "https://poff.ee",
+    //   },
     ];
 
     const joinCard = {
