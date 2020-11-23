@@ -24,6 +24,7 @@
         <OctaFooter class="mt-64" />
       </div>
     </div>
+    <Chat />
   </div>
 </template>
 
@@ -31,6 +32,7 @@
 import OctaFooter from "../components/page/OctaFooter.vue";
 import OctaHeader from "../components/page/OctaHeader.vue";
 import MobileHeader from "../components/page/MobileHeader.vue";
+import Chat from "../components/shared/Chat.vue";
 
 export default {
   name: "Tools",
@@ -38,6 +40,7 @@ export default {
     OctaFooter,
     OctaHeader,
     MobileHeader,
+    Chat,
   },
   props: {
     logoLink: {
