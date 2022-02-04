@@ -2,8 +2,8 @@
   <div class="grid grid-cols-2 gap-12 md:grid-cols-4" v-bind="$attrs">
     <div class="space-y-3 md:col-span-2">
       <h3 class="font-bold leading-tight">Contact us</h3>
-      <p class="leading-tight">Octafest, UAB</p>
-      <p class="leading-tight">Reg №: 231321421412</p>
+      <p class="leading-tight">Menkė, MB</p>
+      <p class="leading-tight">Reg. code: 304416287</p>
       <p class="leading-tight">A.Jakšto g.9, 346</p>
       <p class="leading-tight">Vilnius, Lithuania</p>
       <a class="block leading-tight underline" href="mailto:hello@octafest.com">
