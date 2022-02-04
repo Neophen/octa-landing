@@ -196,13 +196,13 @@ export default {
           links: [
             {
               id: 0,
-              title: "Octafest, UAB",
+              title: "Menkė, MB",
               normal: false,
               url: "#phone",
             },
             {
               id: 0,
-              title: "Reg №: 231321421412",
+              title: "Reg. code: 304416287",
               normal: false,
               url: "#phone",
             },

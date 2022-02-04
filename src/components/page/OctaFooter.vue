@@ -56,7 +56,7 @@
       <p>Cookie policy</p>
       <p>Newsletter management</p>
     </div>
-    <p class="mt-5 text-sm">2020 All Rights Reserved, Octafest, UAB ©</p>
+    <p class="mt-5 text-sm">2022 All Rights Reserved, Menkė, MB ©</p>
   </div>
 </template>
 
