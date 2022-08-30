@@ -19,6 +19,6 @@
     "rollup-plugin-visualizer": "^4.1.1",
     "tailwindcss": "^1.8.13",
     "tailwindcss-fluid": "^0.2.0",
-    "vite": "^1.0.0-rc.4"
+    "vite": "^2.9.13"
   }
 }
